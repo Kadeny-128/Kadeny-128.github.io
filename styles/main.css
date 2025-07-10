@@ -87,6 +87,14 @@ h1, h2, h3 {
 }
 
 /* Hero Section */
+#work {
+    margin-top: 4rem; /* or 6rem if you want more gap */
+  }
+  
+.hero-section {
+    padding-top: 6rem; 
+  }
+  
 .hero-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -360,5 +368,8 @@ h1, h2, h3 {
     width: 100%;
     border-radius: 30px;
     object-fit: cover;
+  }
+  .spaced-card {
+    margin-top: 4em;
   }
   
