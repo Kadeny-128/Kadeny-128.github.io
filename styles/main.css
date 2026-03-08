@@ -23,7 +23,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
 
@@ -48,10 +48,8 @@ h1, h2, h3 {
 }
 
 .nav-logo {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-primary);
+    height: 40px;
+    width: auto;
 }
 
 .nav-links {
