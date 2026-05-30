@@ -3,9 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kaden Yeung</title>
+    <title>Kaden Yeung — Student, Builder &amp; Writer</title>
+
+    <meta
+      name="description"
+      content="Kaden Yeung — student, builder, and writer working at the intersection of AI, science, and human curiosity. Projects in AI drug discovery, desalination research, and more."
+    />
+    <meta name="author" content="Kaden Yeung" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Open Graph / social previews -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kaden Yeung" />
+    <meta
+      property="og:description"
+      content="Student, builder, and writer at the intersection of AI, science, and human curiosity."
+    />
+    <meta property="og:url" content="https://kadenyeung.com" />
+    <meta property="og:image" content="https://kadenyeung.com/images/profile_new.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kaden Yeung" />
+    <meta
+      name="twitter:description"
+      content="Student, builder, and writer at the intersection of AI, science, and human curiosity."
+    />
+    <meta name="twitter:image" content="https://kadenyeung.com/images/profile_new.jpeg" />
+
+    <link rel="canonical" href="https://kadenyeung.com" />
+    <link rel="icon" type="image/png" href="images/marcus.png" />
+    <link rel="apple-touch-icon" href="images/marcus.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -13,356 +45,529 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
     />
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="icon" type="image/x-icon" href="images/profile_new.jpeg" />
   </head>
   <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
     <!-- Navigation -->
-    <nav class="main-nav">
-      <div class="nav-container">
-        <img src="images/marcus.png" alt="Logo" class="nav-logo" />
-        <div class="nav-links">
+    <header class="main-nav" id="top">
+      <nav class="nav-container" aria-label="Primary">
+        <a href="#top" class="nav-brand" aria-label="Kaden Yeung — home">
+          <img src="images/marcus.png" alt="" class="nav-logo" />
+          <span class="nav-name">Kaden Yeung</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="nav-menu">
           <a href="#about" class="nav-link">About</a>
           <a href="#projects" class="nav-link">Projects</a>
-          <a href="#collab" class="nav-link">Company</a>
+          <a href="#experience" class="nav-link">Experience</a>
           <a href="#contact" class="nav-link">Contact</a>
+          <a
+            href="https://kadeny.substack.com/subscribe"
+            class="nav-cta"
+            target="_blank"
+            rel="noopener"
+            >Follow</a
+          >
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <!-- Hero -->
-    <section id="about" class="hero-section">
-      <div class="section-container">
-        <div class="hero-grid">
+    <main id="main">
+      <!-- Hero -->
+      <section id="about" class="hero">
+        <div class="container hero-grid">
           <!-- Left Content -->
-          <div class="hero-content">
+          <div class="hero-content" data-reveal>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Living &amp; learning</p>
             <h1 class="hero-title">Kaden Yeung</h1>
-            <p class="hero-subtitle">Living & Learning.</p>
+            <p class="hero-lead">
+              Student, builder, and writer working at the intersection of AI,
+              science, and human curiosity.
+            </p>
 
             <div class="hero-bio">
-              <p class="bio-text">
-                Between 15 and 17, I interned at AI Healthcare startup,
-                <strong>Singularity Health</strong> and E-business Department at
-                an Asian Bank, <strong>UOB KayHian</strong>.
-              <p class="bio-text">
-      
+              <p>
+                Between 15 and 17, I interned at
+                <strong>Singularity Health</strong>, an AI healthcare startup,
+                and in the e-business department of
+                <strong>UOB Kay Hian</strong>, an Asian investment bank.
               </p>
-                <br />
-                Last year, created a research project on desalination plant
-                barriers, called
-                <strong>PAC-Dose</strong>, focuses on a automatic coagulant
-                dosing system. I learnt a ton of about desalination systems and
-                overall was an exciting sprint. 
-                <p class="bio-text">
-    
-                </p>
-                <br>
-                Early this year, I coded a
-                dashboard leveraging Cerebras system for massively parallel
-                agent execution in drug discovery, called
-                <strong>Consensus</strong>.
+              <p>
+                Last year I built <strong>PAC-Dose</strong>, a research project
+                tackling desalination-plant barriers through an automatic
+                coagulant-dosing system. I learned a ton about desalination, and
+                the whole thing was an exciting sprint.
               </p>
-              <br />
-              <p class="bio-text">
-                Out of work, I read a bunch about astrophysics and philosophy. I
-                occasionally share some thoughts on Substack, planning to launch
-                a podcast soon. But afterall, what do i really know?
+              <p>
+                Earlier this year I coded <strong>Consensus</strong>, a
+                dashboard that leverages Cerebras for massively parallel agent
+                execution in drug discovery.
+              </p>
+              <p>
+                Outside of work, I read a lot about astrophysics and philosophy.
+                I share the occasional thought on Substack and am planning to
+                launch a podcast soon. But after all — what do I really know?
               </p>
             </div>
-
-            <br />
 
             <div class="cta-container">
               <a
                 href="https://kadeny.substack.com/subscribe"
-                class="cta-button"
+                class="btn btn-primary"
                 target="_blank"
+                rel="noopener"
               >
                 <i class="bx bxs-news"></i>
-                Follow My Journey
+                Follow my journey
+              </a>
+              <a href="#contact" class="btn btn-ghost">
+                Get in touch
+                <i class="bx bx-right-arrow-alt"></i>
               </a>
             </div>
+
+            <ul class="hero-social" aria-label="Social links">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/kadeny"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="LinkedIn"
+                >
+                  <i class="bx bxl-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://medium.com/@kadenyeung"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Medium"
+                >
+                  <i class="bx bxl-medium"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://kadeny.substack.com/subscribe"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Substack"
+                >
+                  <i class="bx bxs-news"></i>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:128kaden@gmail.com" aria-label="Email">
+                  <i class="bx bx-envelope"></i>
+                </a>
+              </li>
+            </ul>
           </div>
 
           <!-- Right Image -->
-          <div class="hero-image">
-            <img
-              src="images/profile_new.jpeg"
-              alt="Kaden Yeung"
-              class="profile-img"
-            />
+          <div class="hero-figure" data-reveal>
+            <div class="hero-figure-inner">
+              <img
+                src="images/profile_new.jpeg"
+                alt="Portrait of Kaden Yeung"
+                class="profile-img"
+                width="400"
+                height="400"
+                fetchpriority="high"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-<br>
+      </section>
 
-    <!-- Divider Tags -->
-    <div class="tags-divider">
-      <div class="section-container">
-        <div class="now-tags">
-          <span class="now-tag">📍 Vancouver</span>
-          <span class="now-tag">🇭🇰 from Hong Kong</span>
-          <span class="now-tag">🎓 high school</span>
-          <span class="now-tag">🔬 researching HABs + desalination</span>
-          <span class="now-tag">✍️ writing</span>
+      <!-- "Now" Tags Divider -->
+      <div class="now-strip">
+        <div class="container">
+          <ul class="now-tags" aria-label="Currently">
+            <li class="now-tag">📍 Vancouver</li>
+            <li class="now-tag">🇭🇰 from Hong Kong</li>
+            <li class="now-tag">🎓 high school</li>
+            <li class="now-tag">🔬 researching HABs + desalination</li>
+            <li class="now-tag">✍️ writing</li>
+          </ul>
         </div>
       </div>
-    </div>
 
-    <!-- Projects -->
-    <section id="projects" class="section-spacing">
-      <div class="section-container">
-        <h2 class="section-heading">Projects</h2>
-        <div class="project-grid">
-          <!-- Lead identification -->
-          <article class="project-card">
-            <h3>Cerebras Drug Discovery Engine</h3>
-            <br />
-            <br />
-
-            <p class="project-description">
-              Built a multi-agent AI swarm that accelerates pharmaceutical lead
-              identification. The system autonomously cross-references
-              biological targets against chemical constraints to verify drug
-              candidates in seconds.
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <div class="container">
+          <header class="section-header" data-reveal>
+            <p class="eyebrow">Selected work</p>
+            <h2 class="section-heading">Projects</h2>
+            <p class="section-intro">
+              A few things I've built and researched lately.
             </p>
-            <div class="project-links" style="margin-top: 1rem">
+          </header>
+
+          <div class="project-grid">
+            <!-- Lead identification -->
+            <article class="project-card" data-reveal>
+              <div class="project-top">
+                <span class="project-index">01</span>
+                <ul class="tag-row">
+                  <li>AI</li>
+                  <li>Multi-agent</li>
+                  <li>Drug discovery</li>
+                </ul>
+              </div>
+              <h3 class="project-title">Cerebras Drug Discovery Engine</h3>
+              <p class="project-description">
+                Built a multi-agent AI swarm that accelerates pharmaceutical
+                lead identification. The system autonomously cross-references
+                biological targets against chemical constraints to verify drug
+                candidates in seconds.
+              </p>
               <a
                 href="https://github.com/Kadeny-128/consensus-engine"
                 class="project-link"
                 target="_blank"
+                rel="noopener"
               >
-                View Project <i class="bx bx-link-external"></i>
+                View project <i class="bx bx-link-external"></i>
               </a>
-            </div>
-          </article>
+            </article>
 
-          <!-- Desal Project -->
-          <article class="project-card">
-            <h3>Autodose PAC to mitigate annual HABs issue</h3>
-            <br />
-            <p class="project-description">
-              Designed a sensor-guided automation concept that optimizes PAC
-              dosing during harmful algal blooms, improving desalination
-              efficiency and reducing waste.
-            </p>
-            <div class="project-links" style="margin-top: 1rem">
+            <!-- Desal Project -->
+            <article class="project-card" data-reveal>
+              <div class="project-top">
+                <span class="project-index">02</span>
+                <ul class="tag-row">
+                  <li>Research</li>
+                  <li>Automation</li>
+                  <li>Desalination</li>
+                </ul>
+              </div>
+              <h3 class="project-title">
+                Autodose PAC to mitigate annual HABs
+              </h3>
+              <p class="project-description">
+                Designed a sensor-guided automation concept that optimizes PAC
+                dosing during harmful algal blooms, improving desalination
+                efficiency and reducing waste.
+              </p>
               <a
                 href="https://pacdose-automation.super.site/"
                 class="project-link"
                 target="_blank"
+                rel="noopener"
               >
-                View Case Study <i class="bx bx-news"></i>
+                View case study <i class="bx bx-news"></i>
               </a>
-            </div>
-          </article>
+            </article>
 
-          <!-- Wildfire Project -->
-          <article class="project-card">
-            <h3>Wildfire Detection System</h3>
-            <br />
-            <br />
-
-            <p class="project-description">
-              Designed a real-time wildfire monitoring concept that tracks fuel
-              moisture, temperature, and wind using low-power sensors connected
-              through LoRaWAN and solar power.
-            </p>
-            <div class="project-links" style="margin-top: 1rem">
+            <!-- Wildfire Project -->
+            <article class="project-card" data-reveal>
+              <div class="project-top">
+                <span class="project-index">03</span>
+                <ul class="tag-row">
+                  <li>IoT</li>
+                  <li>LoRaWAN</li>
+                  <li>Hardware</li>
+                </ul>
+              </div>
+              <h3 class="project-title">Wildfire Detection System</h3>
+              <p class="project-description">
+                Designed a real-time wildfire monitoring concept that tracks
+                fuel moisture, temperature, and wind using low-power sensors
+                connected through LoRaWAN and solar power.
+              </p>
               <a
                 href="https://drive.google.com/file/d/1EF3TtyhLMRUF_RdfzeIRY_qD-F55WKXN/view?usp=drive_link"
                 class="project-link"
                 target="_blank"
+                rel="noopener"
               >
-                View 1-Pager <i class="bx bx-link-external"></i>
+                View 1-pager <i class="bx bx-link-external"></i>
               </a>
-            </div>
-          </article>
+            </article>
 
-          <!-- ERC-20 Token Guide -->
-          <article class="project-card">
-            <h3>ERC-20 Launch Guide</h3>
-            <p class="project-description">
-              <br /><br />
-              I documented how to make and launch a token on Ethereum in under 30
-              minutes, and created a guide to help other people make theirs. This gave me insight into
-              smart contracts, decentralization, and how crypto tools are built
-              from first principles.
-            </p>
-            <div class="project-links" style="margin-top: 1rem">
+            <!-- ERC-20 Token Guide -->
+            <article class="project-card" data-reveal>
+              <div class="project-top">
+                <span class="project-index">04</span>
+                <ul class="tag-row">
+                  <li>Web3</li>
+                  <li>Ethereum</li>
+                  <li>Writing</li>
+                </ul>
+              </div>
+              <h3 class="project-title">ERC-20 Launch Guide</h3>
+              <p class="project-description">
+                I documented how to create and launch a token on Ethereum in
+                under 30 minutes, then wrote a guide to help others make their
+                own. It gave me insight into smart contracts, decentralization,
+                and how crypto tools are built from first principles.
+              </p>
               <a
                 href="https://kadenyeung.medium.com/how-to-launch-a-crypto-in-30-minutes-812cd3a8fc85"
                 class="project-link"
                 target="_blank"
+                rel="noopener"
               >
-                Read Case Study <i class="bx bx-news"></i>
+                Read case study <i class="bx bx-news"></i>
               </a>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Collaborations  -->
-    <section id="collab" class="section-spacing">
-      <div class="section-container">
-        <h2 class="section-heading">Company</h2>
-        <div class="collab-grid">
-          <a href="https://www.singularity.health/" class="company-link" target="_blank">
-            <div class="collab-card">
+      <!-- Experience -->
+      <section id="experience" class="section section-alt">
+        <div class="container">
+          <header class="section-header" data-reveal>
+            <p class="eyebrow">Where I've been</p>
+            <h2 class="section-heading">Experience</h2>
+            <p class="section-intro">
+              Internships, consulting projects, and collaborations.
+            </p>
+          </header>
+
+          <div class="experience-grid">
+            <a
+              href="https://www.singularity.health/"
+              class="experience-card"
+              target="_blank"
+              rel="noopener"
+              data-reveal
+            >
               <div class="company-logo">
-                <img src="images/Singularity-Health-Logo-with-text-5-600x318.png" alt="Singularity Health" />
+                <img
+                  src="images/Singularity-Health-Logo-with-text-5-600x318.png"
+                  alt="Singularity Health logo"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
-              <div class="collab-details">
+              <div class="experience-details">
                 <h3>Singularity Health</h3>
                 <p>
-                Reached out to more than 50 startups and landed an operation role at Singularity Health. Talked to many VCs and being in investor meetings were eye-opening. 
+                  Reached out to 50+ startups and landed an operations role
+                  here. Sitting in on conversations with VCs and investor
+                  meetings was eye-opening.
                 </p>
-                <div class="link-hint">Website →</div>
+                <span class="link-hint">Visit website <i class="bx bx-right-arrow-alt"></i></span>
               </div>
-            </div>
-          </a>
+            </a>
 
-          <a href="https://www.uobkayhian.com/" class="company-link" target="_blank">
-            <div class="collab-card">
+            <a
+              href="https://www.uobkayhian.com/"
+              class="experience-card"
+              target="_blank"
+              rel="noopener"
+              data-reveal
+            >
               <div class="company-logo">
-                <img src="images/uob logo.jpeg" alt="UOB KayHian" />
+                <img
+                  src="images/uob%20logo.jpeg"
+                  alt="UOB Kay Hian logo"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
-              <div class="collab-details">
-                <h3>UOB KayHian</h3>
+              <div class="experience-details">
+                <h3>UOB Kay Hian</h3>
                 <p>
-                First experience of working at corporate. Worked at the E-Business department, UI/UX design and feedback stuff. 
+                  My first taste of corporate life — working in the e-business
+                  department on UI/UX design and product feedback.
                 </p>
-                <div class="link-hint">Website →</div>
+                <span class="link-hint">Visit website <i class="bx bx-right-arrow-alt"></i></span>
               </div>
-            </div>
-          </a>
+            </a>
 
-          <a
-            href="https://www.canva.com/design/DAGZTdEbFEc/Gv3sNbGraeC9zrmmjeyfBA/view?utm_content=DAGZTdEbFEc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3433d9a137"
-            class="company-link"
-            target="_blank"
-          >
-            <div class="collab-card">
+            <a
+              href="https://www.canva.com/design/DAGZTdEbFEc/Gv3sNbGraeC9zrmmjeyfBA/view?utm_content=DAGZTdEbFEc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3433d9a137"
+              class="experience-card"
+              target="_blank"
+              rel="noopener"
+              data-reveal
+            >
               <div class="company-logo">
-                <img src="images/ikea.png" alt="IKEA" />
+                <img src="images/ikea.png" alt="IKEA logo" loading="lazy" decoding="async" />
               </div>
-              <div class="collab-details">
+              <div class="experience-details">
                 <h3>IKEA</h3>
                 <p>
-                  First student consulting project. I went to IKEAs all over Vancouver and interviewed consumers and employees. 
+                  My first student consulting project. I visited IKEA stores
+                  across Vancouver to interview customers and employees.
                 </p>
-                <div class="link-hint">View Details →</div>
+                <span class="link-hint">View details <i class="bx bx-right-arrow-alt"></i></span>
               </div>
-            </div>
-          </a>
+            </a>
 
-          <a
-            href="https://docs.google.com/presentation/d/e/2PACX-1vQPbh8JrKEua1-e2IOP4grXT84o-iJfncgvRH2oNEc82K66u5vd3FBiTHd9G8-RFdDGPKJ6x-_to6yX/pub?start=false&loop=false&delayms=3000"
-            class="company-link"
-            target="_blank"
-          >
-            <div class="collab-card">
+            <a
+              href="https://docs.google.com/presentation/d/e/2PACX-1vQPbh8JrKEua1-e2IOP4grXT84o-iJfncgvRH2oNEc82K66u5vd3FBiTHd9G8-RFdDGPKJ6x-_to6yX/pub?start=false&loop=false&delayms=3000"
+              class="experience-card"
+              target="_blank"
+              rel="noopener"
+              data-reveal
+            >
               <div class="company-logo">
-                <img src="images/samsung.png" alt="Samsung" />
+                <img src="images/samsung.png" alt="Samsung logo" loading="lazy" decoding="async" />
               </div>
-              <div class="collab-details">
+              <div class="experience-details">
                 <h3>Samsung</h3>
                 <p>
-                  Did a student research/ consulting project for Samsung. Learnt a ton on company analysis and making a "heck-yeah" slideshow.
+                  A student research and consulting project for Samsung. Learned
+                  a ton about company analysis and building a "heck-yeah" deck.
                 </p>
-                <div class="link-hint">View Details →</div>
+                <span class="link-hint">View details <i class="bx bx-right-arrow-alt"></i></span>
               </div>
-            </div>
-          </a>
+            </a>
 
-          <a
-            href="Shell.pdf"
-            class="company-link"
-            target="_blank"
-          >
-            <div class="collab-card">
+            <a href="Shell.pdf" class="experience-card" target="_blank" rel="noopener" data-reveal>
               <div class="company-logo">
-                <img src="images/shell.png" alt="Shell" />
+                <img src="images/shell.png" alt="Shell logo" loading="lazy" decoding="async" />
               </div>
-              <div class="collab-details">
+              <div class="experience-details">
                 <h3>Shell</h3>
                 <p>
-                  My proudest research project. Poured heart and soul into the suggestion deck. 
+                  My proudest research project — I poured my heart and soul into
+                  the recommendation deck.
                 </p>
-                <div class="link-hint">View Details →</div>
+                <span class="link-hint">View details <i class="bx bx-right-arrow-alt"></i></span>
               </div>
-            </div>
-          </a>
+            </a>
 
-          <a href="https://www.tks.world/" class="company-link" target="_blank">
-            <div class="collab-card">
+            <a href="https://www.tks.world/" class="experience-card" target="_blank" rel="noopener" data-reveal>
               <div class="company-logo">
-                <img src="images/tks.png" alt="TKS" />
+                <img src="images/tks.png" alt="TKS logo" loading="lazy" decoding="async" />
               </div>
-              <div class="collab-details">
-                <h3>"Content Guy"</h3>
+              <div class="experience-details">
+                <h3>TKS — "Content Guy"</h3>
                 <p>
-                Created footage from scratch to finish for TKS's social media. Basically went from the amateur shooting at the start to making few cinematic masterpieces.
+                  Shot and edited footage end-to-end for TKS's social media,
+                  growing from rough early clips to a few genuinely cinematic
+                  pieces.
                 </p>
-                <div class="link-hint">View Program Details →</div>
+                <span class="link-hint">View program <i class="bx bx-right-arrow-alt"></i></span>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact  -->
-    <section id="contact" class="section-spacing">
-      <div class="section-container">
-        <h2 class="section-heading">Find me at...</h2>
-        <div class="contact-grid">
-          <a
-            href="https://kadeny.substack.com/subscribe"
-            class="contact-card"
-            target="_blank"
-          >
-            <i class="bx bx-paper-plane"></i>
-            <div class="contact-info">
-              <h3>More about me</h3>
-              <p>17 & Building</p>
-            </div>
-          </a>
-          <a href="mailto:128kaden@gmail.com" class="contact-card">
-            <i class="bx bx-envelope"></i>
-            <div class="contact-info">
-              <h3>Email</h3>
-              <p>128kaden@gmail.com</p>
-            </div>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/kadeny"
-            class="contact-card"
-            target="_blank"
-          >
-            <i class="bx bxl-linkedin"></i>
-            <div class="contact-info">
-              <h3>LinkedIn</h3>
-              <p>Connect with me!</p>
-            </div>
-          </a>
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container">
+          <header class="section-header" data-reveal>
+            <p class="eyebrow">Get in touch</p>
+            <h2 class="section-heading">Find me at…</h2>
+            <p class="section-intro">
+              I'm always happy to chat — reach out anywhere below.
+            </p>
+          </header>
 
-          <a
-            href="https://medium.com/@kadenyeung"
-            class="contact-card"
-            target="_blank"
-          >
-            <i class="bx bxs-news"></i>
-            <div class="contact-info">
-              <h3>Medium</h3>
-              <p>Read my Writings</p>
-            </div>
-          </a>
+          <div class="contact-grid">
+            <a
+              href="https://kadeny.substack.com/subscribe"
+              class="contact-card"
+              target="_blank"
+              rel="noopener"
+              data-reveal
+            >
+              <i class="bx bx-paper-plane"></i>
+              <div class="contact-info">
+                <h3>Substack</h3>
+                <p>Follow my journey</p>
+              </div>
+            </a>
+            <a href="mailto:128kaden@gmail.com" class="contact-card" data-reveal>
+              <i class="bx bx-envelope"></i>
+              <div class="contact-info">
+                <h3>Email</h3>
+                <p>128kaden@gmail.com</p>
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kadeny"
+              class="contact-card"
+              target="_blank"
+              rel="noopener"
+              data-reveal
+            >
+              <i class="bx bxl-linkedin"></i>
+              <div class="contact-info">
+                <h3>LinkedIn</h3>
+                <p>Let's connect</p>
+              </div>
+            </a>
+            <a
+              href="https://medium.com/@kadenyeung"
+              class="contact-card"
+              target="_blank"
+              rel="noopener"
+              data-reveal
+            >
+              <i class="bx bxs-news"></i>
+              <div class="contact-info">
+                <h3>Medium</h3>
+                <p>Read my writing</p>
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a href="#top" class="footer-brand" aria-label="Back to top">
+          <img src="images/marcus.png" alt="" class="footer-logo" />
+          <span>
+            <span class="footer-name">Kaden Yeung</span>
+            <span class="footer-tag">Living &amp; learning.</span>
+          </span>
+        </a>
+
+        <ul class="footer-social" aria-label="Social links">
+          <li>
+            <a href="https://www.linkedin.com/in/kadeny" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/@kadenyeung" target="_blank" rel="noopener" aria-label="Medium">
+              <i class="bx bxl-medium"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://kadeny.substack.com/subscribe" target="_blank" rel="noopener" aria-label="Substack">
+              <i class="bx bxs-news"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:128kaden@gmail.com" aria-label="Email">
+              <i class="bx bx-envelope"></i>
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer-copy">
+          © <span id="year">2026</span> Kaden Yeung · Built with curiosity.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
