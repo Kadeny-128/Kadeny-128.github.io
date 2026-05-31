@@ -3,32 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Writing — Kaden Yeung</title>
+    <title>Loading… — Kaden Yeung</title>
 
-    <meta
-      name="description"
-      content="Essays and weekly notes by Kaden Yeung — on building, science, philosophy, and figuring life out at 17 and 18."
-    />
+    <meta name="description" content="A project by Kaden Yeung." />
     <meta name="author" content="Kaden Yeung" />
     <meta name="theme-color" content="#ffffff" />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Writing — Kaden Yeung" />
-    <meta
-      property="og:description"
-      content="Essays and weekly notes on building, science, philosophy, and figuring life out."
-    />
-    <meta property="og:url" content="https://kadenyeung.com/blog" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Kaden Yeung" />
+    <meta property="og:description" content="A project by Kaden Yeung." />
     <meta property="og:image" content="https://kadenyeung.com/images/profile_new.jpeg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Writing — Kaden Yeung" />
-    <meta
-      name="twitter:description"
-      content="Essays and weekly notes on building, science, philosophy, and life."
-    />
-    <meta name="twitter:image" content="https://kadenyeung.com/images/profile_new.jpeg" />
 
-    <link rel="canonical" href="https://kadenyeung.com/blog" />
     <link rel="icon" type="image/png" href="images/marcus.png" />
     <link rel="apple-touch-icon" href="images/marcus.png" />
 
@@ -69,9 +55,9 @@
 
         <div class="nav-links" id="nav-menu">
           <a href="/about" class="nav-link">About</a>
-          <a href="/#projects" class="nav-link">Projects</a>
+          <a href="/#projects" class="nav-link is-active">Projects</a>
           <a href="/#experience" class="nav-link">Experience</a>
-          <a href="/blog" class="nav-link is-active">Writing</a>
+          <a href="/blog" class="nav-link">Writing</a>
           <a href="/#contact" class="nav-link">Contact</a>
           <a
             href="https://kadeny.substack.com/subscribe"
@@ -85,23 +71,39 @@
     </header>
 
     <main id="main">
-      <section class="section blog-hero">
+      <article class="article">
         <div class="container">
-          <header class="section-header" data-reveal>
-            <h1 class="section-heading">Writing</h1>
-            <p class="section-intro">
-              A not-so-private journal. Building, science, philosophy, and
-              figuring life out — one week at a time.
-            </p>
-          </header>
-        </div>
-      </section>
+          <div class="article-shell">
+            <a href="/#projects" class="back-link">
+              <i class="bx bx-left-arrow-alt"></i> All projects
+            </a>
 
-      <section class="section section-flush-top">
-        <div class="container">
-          <div id="blog-index"><p class="blog-empty">Loading posts…</p></div>
+            <header>
+              <h1 class="post-hero-title" id="project-title">Loading…</h1>
+              <p class="post-hero-subtitle" id="project-tagline"></p>
+              <div class="post-hero-meta" id="project-meta"></div>
+            </header>
+
+            <div class="project-links" id="project-links"></div>
+
+            <div class="post-body" id="project-body">
+              <p class="blog-empty">Loading project…</p>
+            </div>
+          </div>
         </div>
-      </section>
+
+        <div class="container">
+          <div class="post-cta" data-reveal>
+            <h2>Want to talk about this?</h2>
+            <p>I love comparing notes — reach out anytime.</p>
+            <a href="/#contact" class="btn btn-primary">
+              <i class="bx bx-envelope"></i> Get in touch
+            </a>
+          </div>
+
+          <section class="project-more" id="project-more" aria-label="More projects"></section>
+        </div>
+      </article>
     </main>
 
     <footer class="site-footer">
@@ -148,8 +150,10 @@
       </div>
     </footer>
 
-    <script src="blog/posts.js"></script>
+    <script src="blog/marked.min.js"></script>
     <script src="blog/render.js"></script>
+    <script src="projects/projects.js"></script>
+    <script src="projects/render.js"></script>
     <script src="script.js" defer></script>
   </body>
 </html>

@@ -94,7 +94,7 @@ window.BLOG_POSTS = [
     date: "2025-05-24",
     dateLabel: "May 2025",
     tags: ["Building", "Wildfire", "Authenticity"],
-    cover: "17-and-building-chapter-1_img1.png",
+    cover: "17-and-building-chapter-1_img6.jpg",
     excerpt:
       "The first chapter: a wildfire-detection idea, an honest look at building vs. proving my worth, freewriting, and a free ticket to Web Summit.",
     file: "17-and-building-chapter-1.md",

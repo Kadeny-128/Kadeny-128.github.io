@@ -95,7 +95,7 @@
                 <input id="f-excerpt" type="text" placeholder="Why someone should click" />
               </div>
 
-              <h2 style="margin-top: 1.5rem">Body</h2>
+              <h2 class="gap-top">Body</h2>
               <div class="editor-toolbar" id="toolbar">
                 <button class="tool-btn" data-md="h2" type="button">H2</button>
                 <button class="tool-btn" data-md="h3" type="button">H3</button>
@@ -116,14 +116,14 @@ An optional caption goes on the next line."></textarea>
               <p class="studio-status" id="status">Draft autosaves to this browser.</p>
 
               <div class="studio-help">
-                <h2 style="font-size: 1rem">How to publish</h2>
+                <h2 class="studio-help-title">How to publish</h2>
                 <ol>
                   <li>Click <strong>Download .md</strong> and save it into <code>blog/posts/</code>.</li>
                   <li>Put any images into <code>blog/images/</code> (use the exact filenames you referenced).</li>
                   <li>Click <strong>Copy index entry</strong> and paste it at the <em>top</em> of the array in <code>blog/posts.js</code>.</li>
                   <li>Commit &amp; push. The post appears automatically.</li>
                 </ol>
-                <p style="margin-top: 0.5rem">
+                <p class="studio-help-tip">
                   Tip: reference images in the body as
                   <code>[IMAGE: images/name.jpg]</code> — the renderer maps that to
                   <code>blog/images/</code> for you.
@@ -135,13 +135,13 @@ An optional caption goes on the next line."></textarea>
             <div class="studio-pane studio-preview">
               <h2>Live preview</h2>
               <header>
-                <h1 class="post-hero-title" id="pv-title" style="font-size: 1.9rem">Untitled</h1>
-                <p class="post-hero-subtitle" id="pv-subtitle" style="font-size: 1.1rem"></p>
+                <h1 class="post-hero-title" id="pv-title">Untitled</h1>
+                <p class="post-hero-subtitle" id="pv-subtitle"></p>
                 <div class="post-hero-meta" id="pv-meta"></div>
               </header>
-              <div class="post-cover" id="pv-cover" style="display: none; margin-top: 1.25rem"></div>
+              <div class="post-cover" id="pv-cover"></div>
               <div class="post-body" id="pv-body"></div>
-              <div class="studio-output" id="output" style="display: none"></div>
+              <div class="studio-output" id="output"></div>
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@ An optional caption goes on the next line."></textarea>
 
     <div class="toast" id="toast"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+    <script src="blog/marked.min.js"></script>
     <script src="blog/posts.js"></script>
     <script src="blog/render.js"></script>
     <script src="blog/studio.js"></script>
