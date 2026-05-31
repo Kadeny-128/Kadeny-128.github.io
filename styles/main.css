@@ -276,7 +276,6 @@ strong {
 .nav-logo {
   height: 34px;
   width: auto;
-  mix-blend-mode: multiply; /* drops the logo's white background on light bg */
 }
 
 .nav-name {
@@ -805,12 +804,6 @@ strong {
 .footer-logo {
   height: 42px;
   width: auto;
-  /* marcus.png ships with a white background — present it as a tidy
-     badge so it sits cleanly on the subtle-gray footer. */
-  background: #fff;
-  padding: 5px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
 }
 
 .footer-name {
