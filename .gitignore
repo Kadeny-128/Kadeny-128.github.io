@@ -1,0 +1,5 @@
+# OS junk
+.DS_Store
+
+# Vercel CLI project link
+.vercel

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading… — Kaden Yeung</title>
+
+    <meta name="description" content="An essay by Kaden Yeung." />
+    <meta name="author" content="Kaden Yeung" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Kaden Yeung" />
+    <meta property="og:description" content="An essay by Kaden Yeung." />
+    <meta property="og:image" content="https://kadenyeung.com/images/profile_new.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/png" href="images/marcus.png" />
+    <link rel="apple-touch-icon" href="images/marcus.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/blog.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="main-nav" id="top">
+      <nav class="nav-container" aria-label="Primary">
+        <a href="/" class="nav-brand" aria-label="Kaden Yeung — home">
+          <img src="images/marcus.png" alt="" class="nav-logo" />
+          <span class="nav-name">Kaden Yeung</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="nav-menu">
+          <a href="/about" class="nav-link">About</a>
+          <a href="/#projects" class="nav-link">Projects</a>
+          <a href="/#experience" class="nav-link">Experience</a>
+          <a href="/blog" class="nav-link is-active">Writing</a>
+          <a href="/#contact" class="nav-link">Contact</a>
+          <a
+            href="https://kadeny.substack.com/subscribe"
+            class="nav-cta"
+            target="_blank"
+            rel="noopener"
+            >Follow</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <article class="article">
+        <div class="container">
+          <div class="article-shell">
+            <a href="/blog" class="back-link">
+              <i class="bx bx-left-arrow-alt"></i> All writing
+            </a>
+
+            <header>
+              <h1 class="post-hero-title" id="post-title">Loading…</h1>
+              <p class="post-hero-subtitle" id="post-subtitle"></p>
+              <div class="post-hero-meta" id="post-meta">
+                <span id="post-readtime"></span>
+              </div>
+            </header>
+
+            <div class="post-cover" id="post-cover"></div>
+
+            <div class="post-body" id="post-body">
+              <p class="blog-empty">Loading article…</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subscribe CTA -->
+        <div class="container">
+          <div class="post-cta" data-reveal>
+            <h2>Enjoyed this?</h2>
+            <p>New posts go straight to your inbox — free, always.</p>
+            <a
+              href="https://kadeny.substack.com/subscribe"
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="bx bxs-news"></i> Subscribe
+            </a>
+          </div>
+
+          <nav class="post-nav" id="post-nav" aria-label="More posts"></nav>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a href="/#top" class="footer-brand" aria-label="Back to top">
+          <img src="images/marcus.png" alt="" class="footer-logo" />
+          <span>
+            <span class="footer-name">Kaden Yeung</span>
+            <span class="footer-tag">Living &amp; learning.</span>
+          </span>
+        </a>
+
+        <ul class="footer-social" aria-label="Social links">
+          <li>
+            <a href="https://www.linkedin.com/in/kadeny" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/@kadenyeung" target="_blank" rel="noopener" aria-label="Medium">
+              <i class="bx bxl-medium"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://kadeny.substack.com/subscribe" target="_blank" rel="noopener" aria-label="Substack">
+              <i class="bx bxs-news"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:128kaden@gmail.com" aria-label="Email">
+              <i class="bx bx-envelope"></i>
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer-copy">
+          © <span id="year">2026</span> Kaden Yeung · Built with life.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Markdown renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+    <script src="blog/posts.js"></script>
+    <script src="blog/render.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>

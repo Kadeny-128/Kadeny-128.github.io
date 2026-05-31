@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Writing — Kaden Yeung</title>
+
+    <meta
+      name="description"
+      content="Essays and weekly notes by Kaden Yeung — on building, science, philosophy, and figuring life out at 17 and 18."
+    />
+    <meta name="author" content="Kaden Yeung" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Writing — Kaden Yeung" />
+    <meta
+      property="og:description"
+      content="Essays and weekly notes on building, science, philosophy, and figuring life out."
+    />
+    <meta property="og:url" content="https://kadenyeung.com/blog.html" />
+    <meta property="og:image" content="https://kadenyeung.com/images/profile_new.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Writing — Kaden Yeung" />
+    <meta
+      name="twitter:description"
+      content="Essays and weekly notes on building, science, philosophy, and life."
+    />
+    <meta name="twitter:image" content="https://kadenyeung.com/images/profile_new.jpeg" />
+
+    <link rel="canonical" href="https://kadenyeung.com/blog.html" />
+    <link rel="icon" type="image/png" href="images/marcus.png" />
+    <link rel="apple-touch-icon" href="images/marcus.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/blog.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="main-nav" id="top">
+      <nav class="nav-container" aria-label="Primary">
+        <a href="/" class="nav-brand" aria-label="Kaden Yeung — home">
+          <img src="images/marcus.png" alt="" class="nav-logo" />
+          <span class="nav-name">Kaden Yeung</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="nav-menu">
+          <a href="/about" class="nav-link">About</a>
+          <a href="/#projects" class="nav-link">Projects</a>
+          <a href="/#experience" class="nav-link">Experience</a>
+          <a href="/blog" class="nav-link is-active">Writing</a>
+          <a href="/#contact" class="nav-link">Contact</a>
+          <a
+            href="https://kadeny.substack.com/subscribe"
+            class="nav-cta"
+            target="_blank"
+            rel="noopener"
+            >Follow</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="section blog-hero">
+        <div class="container">
+          <header class="section-header" data-reveal>
+            <span class="eyebrow"><span class="eyebrow-dot"></span> The blog</span>
+            <h1 class="section-heading">Writing</h1>
+            <p class="section-intro">
+              A not-so-private journal. Building, science, philosophy, and
+              figuring life out — one week at a time.
+            </p>
+          </header>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="container">
+          <div id="blog-index"><p class="blog-empty">Loading posts…</p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a href="/#top" class="footer-brand" aria-label="Back to top">
+          <img src="images/marcus.png" alt="" class="footer-logo" />
+          <span>
+            <span class="footer-name">Kaden Yeung</span>
+            <span class="footer-tag">Living &amp; learning.</span>
+          </span>
+        </a>
+
+        <ul class="footer-social" aria-label="Social links">
+          <li>
+            <a href="https://www.linkedin.com/in/kadeny" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/@kadenyeung" target="_blank" rel="noopener" aria-label="Medium">
+              <i class="bx bxl-medium"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://kadeny.substack.com/subscribe" target="_blank" rel="noopener" aria-label="Substack">
+              <i class="bx bxs-news"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:128kaden@gmail.com" aria-label="Email">
+              <i class="bx bx-envelope"></i>
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer-copy">
+          © <span id="year">2026</span> Kaden Yeung · Built with life.
+        </p>
+      </div>
+    </footer>
+
+    <script src="blog/posts.js"></script>
+    <script src="blog/render.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>

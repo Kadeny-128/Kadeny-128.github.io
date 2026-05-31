@@ -17,6 +17,7 @@
   function closeMenu() {
     if (!navMenu || !navToggle) return;
     navMenu.classList.remove("is-open");
+    document.body.classList.remove("menu-open");
     navToggle.setAttribute("aria-expanded", "false");
     navToggle.setAttribute("aria-label", "Open menu");
   }
@@ -24,6 +25,7 @@
   if (navToggle && navMenu) {
     navToggle.addEventListener("click", function () {
       var isOpen = navMenu.classList.toggle("is-open");
+      document.body.classList.toggle("menu-open", isOpen);
       navToggle.setAttribute("aria-expanded", String(isOpen));
       navToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
     });
@@ -48,6 +50,17 @@
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape") closeMenu();
     });
+
+    // Reset the menu (and its scroll-lock) if we grow past the mobile breakpoint
+    var desktopQuery = window.matchMedia("(min-width: 821px)");
+    var onBreakpoint = function (e) {
+      if (e.matches) closeMenu();
+    };
+    if (desktopQuery.addEventListener) {
+      desktopQuery.addEventListener("change", onBreakpoint);
+    } else if (desktopQuery.addListener) {
+      desktopQuery.addListener(onBreakpoint); // Safari < 14
+    }
   }
 
   /* ----- Nav shadow / border on scroll ----- */

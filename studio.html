@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio — Write a post — Kaden Yeung</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="icon" type="image/png" href="images/marcus.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/blog.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="main-nav" id="top">
+      <nav class="nav-container" aria-label="Primary">
+        <a href="/" class="nav-brand" aria-label="Kaden Yeung — home">
+          <img src="images/marcus.png" alt="" class="nav-logo" />
+          <span class="nav-name">Kaden Yeung</span>
+        </a>
+        <div class="nav-links" id="nav-menu">
+          <a href="/blog" class="nav-link">Writing</a>
+          <a href="/" class="nav-link">Home</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="studio">
+        <div class="container">
+          <div class="studio-bar">
+            <h1>Writing Studio</h1>
+            <div class="studio-actions">
+              <button class="btn btn-ghost" id="btn-clear" type="button">
+                <i class="bx bx-trash"></i> New
+              </button>
+              <button class="btn btn-ghost" id="btn-copy-md" type="button">
+                <i class="bx bx-copy"></i> Copy markdown
+              </button>
+              <button class="btn btn-ghost" id="btn-copy-entry" type="button">
+                <i class="bx bx-code-alt"></i> Copy index entry
+              </button>
+              <button class="btn btn-primary" id="btn-download" type="button">
+                <i class="bx bx-download"></i> Download .md
+              </button>
+            </div>
+          </div>
+
+          <div class="studio-grid">
+            <!-- LEFT: editor -->
+            <div class="studio-pane">
+              <h2>Post details</h2>
+              <div class="field">
+                <label for="f-title">Title</label>
+                <input id="f-title" type="text" placeholder="An honest headline" />
+              </div>
+              <div class="field">
+                <label for="f-subtitle">Subtitle / dek</label>
+                <input id="f-subtitle" type="text" placeholder="One line that sets the tone" />
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="f-date">Date</label>
+                  <input id="f-date" type="date" />
+                </div>
+                <div class="field">
+                  <label for="f-slug">Slug (URL id)</label>
+                  <input id="f-slug" type="text" placeholder="auto from title" />
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="f-tags">Tags (comma separated)</label>
+                  <input id="f-tags" type="text" placeholder="Life, Building" />
+                </div>
+                <div class="field">
+                  <label for="f-cover">Cover image (filename in blog/images/)</label>
+                  <input id="f-cover" type="text" placeholder="my-post_cover.jpg" />
+                </div>
+              </div>
+              <div class="field">
+                <label for="f-excerpt">Excerpt (card teaser)</label>
+                <input id="f-excerpt" type="text" placeholder="Why someone should click" />
+              </div>
+
+              <h2 style="margin-top: 1.5rem">Body</h2>
+              <div class="editor-toolbar" id="toolbar">
+                <button class="tool-btn" data-md="h2" type="button">H2</button>
+                <button class="tool-btn" data-md="h3" type="button">H3</button>
+                <button class="tool-btn" data-md="bold" type="button"><strong>B</strong></button>
+                <button class="tool-btn" data-md="italic" type="button"><em>I</em></button>
+                <button class="tool-btn" data-md="link" type="button">Link</button>
+                <button class="tool-btn" data-md="quote" type="button">Quote</button>
+                <button class="tool-btn" data-md="list" type="button">List</button>
+                <button class="tool-btn" data-md="image" type="button">Image</button>
+              </div>
+              <div class="field">
+                <textarea id="editor" placeholder="Write in Markdown. Use ## for section headings.
+
+Add a picture with:
+[IMAGE: images/my-photo.jpg]
+An optional caption goes on the next line."></textarea>
+              </div>
+              <p class="studio-status" id="status">Draft autosaves to this browser.</p>
+
+              <div class="studio-help">
+                <h2 style="font-size: 1rem">How to publish</h2>
+                <ol>
+                  <li>Click <strong>Download .md</strong> and save it into <code>blog/posts/</code>.</li>
+                  <li>Put any images into <code>blog/images/</code> (use the exact filenames you referenced).</li>
+                  <li>Click <strong>Copy index entry</strong> and paste it at the <em>top</em> of the array in <code>blog/posts.js</code>.</li>
+                  <li>Commit &amp; push. The post appears automatically.</li>
+                </ol>
+                <p style="margin-top: 0.5rem">
+                  Tip: reference images in the body as
+                  <code>[IMAGE: images/name.jpg]</code> — the renderer maps that to
+                  <code>blog/images/</code> for you.
+                </p>
+              </div>
+            </div>
+
+            <!-- RIGHT: live preview -->
+            <div class="studio-pane studio-preview">
+              <h2>Live preview</h2>
+              <header>
+                <h1 class="post-hero-title" id="pv-title" style="font-size: 1.9rem">Untitled</h1>
+                <p class="post-hero-subtitle" id="pv-subtitle" style="font-size: 1.1rem"></p>
+                <div class="post-hero-meta" id="pv-meta"></div>
+              </header>
+              <div class="post-cover" id="pv-cover" style="display: none; margin-top: 1.25rem"></div>
+              <div class="post-body" id="pv-body"></div>
+              <div class="studio-output" id="output" style="display: none"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+    <script src="blog/posts.js"></script>
+    <script src="blog/render.js"></script>
+    <script src="blog/studio.js"></script>
+  </body>
+</html>
