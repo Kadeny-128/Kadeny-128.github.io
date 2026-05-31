@@ -19,6 +19,10 @@
   text-align: center;
 }
 
+.section-flush-top {
+  padding-top: 0;
+}
+
 /* ----- Featured / latest card ----- */
 .feature-card {
   display: grid;
@@ -63,19 +67,22 @@
   color: #fff;
 }
 
-.feature-media-text span {
+/* Cover-less posts get an intentional typographic card: a big serif
+   quotation mark, signalling "an essay" rather than a missing image. */
+.feature-media-text span,
+.post-card-media-text span {
   font-family: var(--font-serif);
-  font-size: 5rem;
   font-weight: 600;
-  opacity: 0.85;
+  line-height: 0;
+  opacity: 0.9;
+}
+
+.feature-media-text span {
+  font-size: 12rem;
 }
 
 .post-card-media-text span {
-  font-family: var(--font-serif);
-  font-size: 2.5rem;
-  font-weight: 600;
-  text-transform: lowercase;
-  opacity: 0.9;
+  font-size: 8rem;
 }
 
 .feature-body {
@@ -194,6 +201,16 @@
   color: var(--text-secondary);
   font-size: 0.95rem;
   flex: 1;
+}
+
+/* Long words / URLs can never push text out of a card or the article column. */
+.feature-title,
+.feature-excerpt,
+.post-card-title,
+.post-card-excerpt,
+.post-body {
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 /* =================================================================
@@ -380,6 +397,15 @@
   background: var(--bg-subtle);
 }
 
+/* A single (non-gallery) image keeps its aspect ratio and never grows
+   taller than the viewport — stops tall phone screenshots dominating. */
+.post-figure > img {
+  width: auto;
+  max-width: 100%;
+  max-height: 78vh;
+  margin-inline: auto;
+}
+
 .post-figcaption {
   margin-top: 0.7rem;
   font-size: 0.9rem;
@@ -472,6 +498,100 @@
 }
 
 /* =================================================================
+   Project pages (project.html)
+   ================================================================= */
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.project-page-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.15rem;
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text);
+  transition: transform var(--t-fast) var(--ease),
+    border-color var(--t-fast) var(--ease), background var(--t-fast) var(--ease),
+    color var(--t-fast) var(--ease);
+}
+
+.project-page-link i {
+  font-size: 1.15rem;
+}
+
+.project-page-link:hover {
+  transform: translateY(-2px);
+  border-color: var(--text);
+}
+
+/* the GitHub link reads as the primary action */
+.project-page-link[href*="github"] {
+  background: var(--text);
+  color: #fff;
+  border-color: var(--text);
+}
+
+.project-page-link[href*="github"]:hover {
+  background: #000;
+}
+
+.project-more {
+  max-width: 720px;
+  margin: 3.5rem auto 0;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.project-more-title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.project-more-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.project-more-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: inherit;
+  transition: border-color var(--t-fast) var(--ease),
+    transform var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
+}
+
+.project-more-card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.project-more-name {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.project-more-tagline {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* =================================================================
    Studio (writing CMS) — studio.html
    ================================================================= */
 .studio {
@@ -516,6 +636,22 @@
   font-family: var(--font-sans);
   font-weight: 700;
   margin-bottom: 1rem;
+}
+
+.studio-pane h2.gap-top {
+  margin-top: 1.5rem;
+}
+
+.studio-preview .post-hero-title {
+  font-size: 1.9rem;
+}
+
+.studio-preview .post-hero-subtitle {
+  font-size: 1.1rem;
+}
+
+.studio-preview .post-cover {
+  margin-top: 1.25rem;
 }
 
 .field {
@@ -613,6 +749,8 @@
   color: var(--text-secondary);
 }
 
+.studio-help-title { font-size: 1rem; }
+.studio-help-tip { margin-top: 0.5rem; }
 .studio-help ol { padding-left: 1.3rem; }
 .studio-help li { margin-bottom: 0.45rem; }
 .studio-help code {
@@ -625,6 +763,7 @@
 }
 
 .studio-output {
+  display: none;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 0.8rem;
   white-space: pre-wrap;

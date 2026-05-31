@@ -37,18 +37,6 @@ window.BLOG_POSTS = [
     featured: true,
   },
   {
-    slug: "18",
-    title: "18.",
-    subtitle: "break-up talk.",
-    date: "2026-02-15",
-    dateLabel: "Feb 2026",
-    tags: ["Life", "Reflection"],
-    cover: "",
-    excerpt:
-      "My first breakup, withdrawal syndrome, the myth of closure, and the quiet battle of learning to be 'me' again.",
-    file: "18.md",
-  },
-  {
     slug: "things-seen-only-by-those-at-home",
     title: "Things seen only by those at home with Nature and its works.",
     subtitle:
@@ -94,7 +82,7 @@ window.BLOG_POSTS = [
     date: "2025-05-24",
     dateLabel: "May 2025",
     tags: ["Building", "Wildfire", "Authenticity"],
-    cover: "17-and-building-chapter-1_img1.png",
+    cover: "17-and-building-chapter-1_img6.jpg",
     excerpt:
       "The first chapter: a wildfire-detection idea, an honest look at building vs. proving my worth, freewriting, and a free ticket to Web Summit.",
     file: "17-and-building-chapter-1.md",

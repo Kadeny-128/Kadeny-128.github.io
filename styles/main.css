@@ -805,16 +805,12 @@ strong {
 .footer-logo {
   height: 42px;
   width: auto;
-<<<<<<< Updated upstream
-  mix-blend-mode: multiply;
-=======
   /* marcus.png ships with a white background — present it as a tidy
      badge so it sits cleanly on the subtle-gray footer. */
   background: #fff;
   padding: 5px;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
->>>>>>> Stashed changes
 }
 
 .footer-name {

@@ -217,7 +217,7 @@
         esc(featured.cover) +
         '" alt="" loading="eager" decoding="async" /></div>';
     } else {
-      html += '<div class="feature-media feature-media-text"><span>' + esc(featured.title.slice(0, 1)) + "</span></div>";
+      html += '<div class="feature-media feature-media-text"><span aria-hidden="true">“</span></div>';
     }
     html += '<div class="feature-body">';
     html += '<span class="post-kicker">Latest' + (featured.tags && featured.tags[0] ? " · " + esc(featured.tags[0]) : "") + "</span>";
@@ -236,7 +236,7 @@
           esc(p.cover) +
           '" alt="" loading="lazy" decoding="async" /></div>';
       } else {
-        html += '<div class="post-card-media post-card-media-text"><span>' + esc(p.title.slice(0, 2)) + "</span></div>";
+        html += '<div class="post-card-media post-card-media-text"><span aria-hidden="true">“</span></div>';
       }
       html += '<div class="post-card-body">';
       if (p.tags && p.tags.length) {
