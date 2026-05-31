@@ -309,7 +309,6 @@ strong {
 .nav-logo {
   height: 34px;
   width: auto;
-  mix-blend-mode: multiply; /* drops the logo's white background on light bg */
 }
 
 .nav-name {
@@ -838,7 +837,6 @@ strong {
 .footer-logo {
   height: 42px;
   width: auto;
-  mix-blend-mode: multiply;
 }
 
 .footer-name {
@@ -952,6 +950,14 @@ strong {
   .project-grid,
   .experience-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Cards are full-width single-column here, so always show the
+     "View details →" CTA instead of waiting for a hover that may
+     never come on a narrow / touch layout. */
+  .link-hint {
+    opacity: 1;
+    transform: none;
   }
 }
 
