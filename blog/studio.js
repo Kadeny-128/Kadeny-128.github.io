@@ -112,8 +112,12 @@
     var cover = $("pv-cover");
     if (fields.cover.value) {
       cover.style.display = "";
-      cover.innerHTML = '<img src="blog/images/' + esc(fields.cover.value) + '" alt="" ' +
-        'onerror="this.parentNode.style.display=\'none\'" />';
+      cover.innerHTML =
+        '<img src="/blog/images/' + esc(fields.cover.value) + '" alt="" />';
+      var cimg = cover.querySelector("img");
+      if (cimg) {
+        cimg.onerror = function () { cover.style.display = "none"; };
+      }
     } else {
       cover.style.display = "none";
     }
@@ -201,7 +205,7 @@
     }
     // also surface it so it can always be selected manually
     var out = $("output");
-    out.style.display = "";
+    out.style.display = "block";
     out.textContent = text;
   }
 

@@ -19,6 +19,10 @@
   text-align: center;
 }
 
+.section-flush-top {
+  padding-top: 0;
+}
+
 /* ----- Featured / latest card ----- */
 .feature-card {
   display: grid;
@@ -518,6 +522,22 @@
   margin-bottom: 1rem;
 }
 
+.studio-pane h2.gap-top {
+  margin-top: 1.5rem;
+}
+
+.studio-preview .post-hero-title {
+  font-size: 1.9rem;
+}
+
+.studio-preview .post-hero-subtitle {
+  font-size: 1.1rem;
+}
+
+.studio-preview .post-cover {
+  margin-top: 1.25rem;
+}
+
 .field {
   display: flex;
   flex-direction: column;
@@ -613,6 +633,8 @@
   color: var(--text-secondary);
 }
 
+.studio-help-title { font-size: 1rem; }
+.studio-help-tip { margin-top: 0.5rem; }
 .studio-help ol { padding-left: 1.3rem; }
 .studio-help li { margin-bottom: 0.45rem; }
 .studio-help code {
@@ -625,6 +647,7 @@
 }
 
 .studio-output {
+  display: none;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 0.8rem;
   white-space: pre-wrap;
