@@ -918,6 +918,14 @@ strong {
   .experience-grid {
     grid-template-columns: 1fr;
   }
+
+  /* Cards are full-width single-column here, so always show the
+     "View details →" CTA instead of waiting for a hover that may
+     never come on a narrow / touch layout. */
+  .link-hint {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 @media (max-width: 820px) {
