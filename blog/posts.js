@@ -30,7 +30,7 @@ window.BLOG_POSTS = [
     date: "2026-05-28",
     dateLabel: "May 2026",
     tags: ["Life", "Building", "Agency"],
-    cover: "finishing-high-school-starting-an_img1.png",
+    cover: "finishing-high-school-starting-an_img8.jpg",
     excerpt:
       "HABs research, a Cerebras hackathon, a photo booth, a GEO + ChatGPT-ads agency, and a reminder that no metric replaces the people you love.",
     file: "finishing-high-school-starting-an.md",

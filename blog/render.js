@@ -1,7 +1,7 @@
 /* =================================================================
    Kaden Yeung — Blog engine
    Markdown → article HTML · index grid · reader · prev/next
-   Works on GitHub Pages (served over http/https).
+   Served over http/https (Vercel). Fetches markdown from /blog/posts/.
    ================================================================= */
 (function () {
   "use strict";

@@ -120,39 +120,6 @@ strong {
   color: var(--text);
 }
 
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 1.1rem;
-}
-
-.eyebrow-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 0 var(--ring);
-  animation: pulse 2.4s var(--ease) infinite;
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.5);
-  }
-  70% {
-    box-shadow: 0 0 0 8px rgba(37, 99, 235, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
-  }
-}
-
 /* ----- Layout helpers ----- */
 .container {
   width: 100%;
@@ -838,7 +805,16 @@ strong {
 .footer-logo {
   height: 42px;
   width: auto;
+<<<<<<< Updated upstream
   mix-blend-mode: multiply;
+=======
+  /* marcus.png ships with a white background — present it as a tidy
+     badge so it sits cleanly on the subtle-gray footer. */
+  background: #fff;
+  padding: 5px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+>>>>>>> Stashed changes
 }
 
 .footer-name {
