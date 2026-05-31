@@ -156,9 +156,9 @@ It told me to write whatever pops into your head, but there are a few rules once
 
 - Little 5–10s breaks are fine, but try to not stop typing
 
-- No need to stay on the topic you started with — let your mind wander
+- No need to stay on the topic you started with. Let your mind wander
 
-- No judgment — trust your mind!
+- No judgment. Trust your mind!
 
 I realized free-write is not just a word doc, it is a practice to let your consciousness flow. The journals were full of collections of hidden thoughts. I let all those thoughts out, and it felt good. I shot my journal to Claude. The reflections usually would blow my mind again.
 

@@ -48,7 +48,7 @@
       return;
     }
 
-    document.title = project.title + " — Kaden Yeung";
+    document.title = project.title + " | Kaden Yeung";
     setMeta("description", project.tagline || "");
     setMeta("og:title", project.title, true);
     setMeta("og:description", project.tagline || "", true);
@@ -107,7 +107,7 @@
     var html = '<h2 class="project-more-title">More projects</h2><div class="project-more-grid">';
     others.forEach(function (p) {
       html +=
-        '<a class="project-more-card" href="/project?slug=' + esc(p.slug) + '">' +
+        '<a class="project-more-card" href="/project.html?slug=' + esc(p.slug) + '">' +
         '<span class="project-more-name">' + esc(p.title) + "</span>" +
         '<span class="project-more-tagline">' + esc(p.tagline || "") + "</span>" +
         "</a>";

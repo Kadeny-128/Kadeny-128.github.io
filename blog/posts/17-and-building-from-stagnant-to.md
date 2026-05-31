@@ -17,9 +17,9 @@ Yesterday, I stood on stage in front of 250+ people, leading my first panel disc
 
 Reminder: breakthrough moments come right after the valleys. (sometimes)
 
-The lesson I learnt — it was just one of those days. Please don’t beat yourself up when they strike, because those days strike quite often.
+The lesson I learnt: it was just one of those days. Please don’t beat yourself up when they strike, because those days strike quite often.
 
-When they do, be persistent — the answers will come eventually.
+When they do, be persistent. The answers will come eventually.
 
 With that being said, let’s break down my first-ever panel.
 
@@ -27,11 +27,11 @@ With that being said, let’s break down my first-ever panel.
 
 ### The Knowledge Society.
 
-10 months ago, I started my journey at a youth accelerator program — TKS.
+10 months ago, I started my journey at a youth accelerator program: TKS.
 
 a.k.a. The Knowledge Society.
 
-It was the first intentional choice I made for myself, and perhaps one of the most ones — it shaped “me” today.
+It was the first intentional choice I made for myself, and perhaps one of the most important ones. It shaped “me” today.
 
 I have a lot to say about TKS, as for now, I’ll stick to our theme.
 
@@ -43,17 +43,17 @@ he taught me how to be intentional, how to be curious.
 
 After talks and talks with professionals, I also learnt how to speak with clarity and intelligence.
 
-Yesterday, it all came to an end — one-year of progress, wrapped up in a conference.
+Yesterday, it all came to an end: one year of progress, wrapped up in a conference.
 
 [IMAGE: images/17-and-building-from-stagnant-to_img2.png]
 
-### panel — just a conversation.
+### panel: just a conversation.
 
 TKS kids were the spotlights. Each of them showcased their projects that they spent the last 10 months to craft and perfect, some on Biotech, Quantum Computing, personalized medicines…
 
 They all have different roles, either spotlight speakers, lightning pitch speakers, or the panelists.
 
-My role — was to lead the panel on interviewing John Westworth - the director of Microsoft Garage.
+My role was to lead the panel on interviewing John Westworth - the director of Microsoft Garage.
 
 I was nervous.
 
@@ -65,7 +65,7 @@ I have always wanted to speak. I wanted to ask questions. I wanted to engage wit
 
 So, over the last few days, I wrapped my head around panelling 101.
 
-I came down to one simple rule —
+I came down to one simple rule:
 
 “Focus on how audiences can relate to what John says, and speak as concise as possible to keep the spotlight on John.”
 
@@ -73,11 +73,11 @@ The main job as a panel host, is to make sure the “guest” has the spotlight,
 
 When the panel started, I asked John some questions on emerging tech, “must need” traits to prepare ourselves, how to solve problems with empathy…
 
-I even made a few jokes along the lines, the result was — the audience loved the panel.
+I even made a few jokes along the lines, and the audience loved the panel.
 
 It was a hell of an experience, speaking in front of more than 250 participants.
 
-Oh, forgot to mention — lucky me, I have known John as a friend for a while.
+Oh, forgot to mention: lucky me, I have known John as a friend for a while.
 
 
 ### John.
@@ -90,7 +90,7 @@ For context, John left school at 16, and today, he drives innovation in one of t
 
 That sounds insane.
 
-We have a saying in TKS — “In order to achieve unconventional success, you must take the unconventional path.”
+We have a saying in TKS: “In order to achieve unconventional success, you must take the unconventional path.”
 
 John is the perfect example of that.
 
@@ -104,12 +104,12 @@ I learnt a lot from John that day, and there is always more to learn each time w
 ### moments to remember.
 
 [IMAGE: images/17-and-building-from-stagnant-to_img3.jpg]
-Shoutout to my buddy — Tom Buchwald on interviewing Chris Hobbs, CEO of TTT Studios.
+Shoutout to my buddy, Tom Buchwald, on interviewing Chris Hobbs, CEO of TTT Studios.
 
-Tom is a hell of a speaker, he taught me a lot about speaking with clarity and more importantly — authenticity. A great friend I met over the last 10 months.
+Tom is a hell of a speaker, he taught me a lot about speaking with clarity and more importantly, authenticity. A great friend I met over the last 10 months.
 
 [IMAGE: images/17-and-building-from-stagnant-to_img4.jpg]
-Shoutout another buddy, Zsigmond — who stepped out of his comfort zone and spoke about his journey at TKS.
+Shoutout another buddy, Zsigmond, who stepped out of his comfort zone and spoke about his journey at TKS.
 
 “But in front of two judges. I cracked. I froze for the first time. Chances of winning it went to zero, and I knew I let my team down.Public speaking became a new fear for me.”
 
@@ -128,7 +128,7 @@ With that being said, my goal is a long-term game.
 
 As I mentioned before, “python grind” is on my bucket list.
 
-It still is, but allow me to drop something else into the bucket — AI.
+It still is, but allow me to drop something else into the bucket: AI.
 
 TKS packages a 70+ hours AI module, and I will do it all.
 
@@ -136,7 +136,7 @@ Yes, trust me. AI and python.
 
 Summer is coming up, and this summer will be about AI and python.
 
-I don’t care if I’m behind or ahead in the game, as I have been told —
+I don’t care if I’m behind or ahead in the game, as I have been told:
 
 “If you're ahead of others, you'll slow down.
 
@@ -165,7 +165,7 @@ It may take days. It may take years.
 
 But keep writing, regardless."
 
-Just like my journey with TKS, paneling, and learning to code — the real value isn't in immediate validation.
+Just like my journey with TKS, paneling, and learning to code, the real value isn't in immediate validation.
 
 It is the process of becoming that person I wish to be, through showing up and doing hard things regardless of the results.
 

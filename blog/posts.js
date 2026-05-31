@@ -52,7 +52,7 @@ window.BLOG_POSTS = [
   {
     slug: "17-and-building-from-stagnant-to",
     title: "17 & Building: From Stagnant to Spotlight",
-    subtitle: "a boring week — followed by the most awesome Saturday in my life.",
+    subtitle: "a boring week, followed by the most awesome Saturday in my life.",
     date: "2025-06-14",
     dateLabel: "Jun 2025",
     tags: ["Building", "TKS", "Speaking"],
@@ -78,7 +78,7 @@ window.BLOG_POSTS = [
     slug: "17-and-building-chapter-1",
     title: "17 & Building : Chapter 1",
     subtitle:
-      "Read my “private journal”. Every week — new projects, new thoughts, new perspectives.",
+      “Read my “private journal”. Every week: new projects, new thoughts, new perspectives.”,
     date: "2025-05-24",
     dateLabel: "May 2025",
     tags: ["Building", "Wildfire", "Authenticity"],

@@ -199,7 +199,7 @@
   /* ---------- blog index ---------- */
   function renderIndex(root) {
     if (!POSTS.length) {
-      root.innerHTML = '<p class="blog-empty">No posts yet — check back soon.</p>';
+      root.innerHTML = '<p class="blog-empty">No posts yet. Check back soon.</p>';
       return;
     }
 
@@ -210,7 +210,7 @@
 
     // Featured / latest
     html +=
-      '<a class="feature-card" href="/post?slug=' + esc(featured.slug) + '" data-reveal>';
+      '<a class="feature-card" href="/post.html?slug=' + esc(featured.slug) + '" data-reveal>';
     if (featured.cover) {
       html +=
         '<div class="feature-media"><img src="/blog/images/' +
@@ -229,7 +229,7 @@
     // Grid of the rest
     html += '<div class="post-grid">';
     rest.forEach(function (p) {
-      html += '<a class="post-card" href="/post?slug=' + esc(p.slug) + '" data-reveal>';
+      html += '<a class="post-card" href="/post.html?slug=' + esc(p.slug) + '" data-reveal>';
       if (p.cover) {
         html +=
           '<div class="post-card-media"><img src="/blog/images/' +
@@ -271,12 +271,12 @@
       if (titleEl) titleEl.textContent = "Post not found";
       if (bodyEl)
         bodyEl.innerHTML =
-          '<p>Sorry, that article doesn\'t exist. <a href="/blog">Back to all writing →</a></p>';
+          '<p>Sorry, that article doesn\'t exist. <a href="/blog.html">Back to all writing →</a></p>';
       return;
     }
 
     // Hero / metadata
-    document.title = post.title + " — Kaden Yeung";
+    document.title = post.title + " | Kaden Yeung";
     setMeta("description", post.excerpt || post.subtitle || "");
     setMeta("og:title", post.title, true);
     setMeta("og:description", post.excerpt || post.subtitle || "", true);
@@ -331,7 +331,7 @@
             esc(err.message) +
             "</small></p>" +
             '<p><small>If you opened this file directly from disk, run a local server ' +
-            "(e.g. <code>python3 -m http.server</code>) — browsers block <code>fetch</code> on <code>file://</code>. " +
+            "(e.g. <code>python3 -m http.server</code>); browsers block <code>fetch</code> on <code>file://</code>. " +
             "On the live site it works automatically.</small></p>";
         }
       });
@@ -346,7 +346,7 @@
     var html = "";
     if (older) {
       html +=
-        '<a class="post-nav-link prev" href="/post?slug=' + esc(older.slug) + '">' +
+        '<a class="post-nav-link prev" href="/post.html?slug=' + esc(older.slug) + '">' +
         '<span class="post-nav-dir"><i class="bx bx-left-arrow-alt"></i> Older</span>' +
         '<span class="post-nav-title">' + esc(older.title) + "</span></a>";
     } else {
@@ -354,7 +354,7 @@
     }
     if (newer) {
       html +=
-        '<a class="post-nav-link next" href="/post?slug=' + esc(newer.slug) + '">' +
+        '<a class="post-nav-link next" href="/post.html?slug=' + esc(newer.slug) + '">' +
         '<span class="post-nav-dir">Newer <i class="bx bx-right-arrow-alt"></i></span>' +
         '<span class="post-nav-title">' + esc(newer.title) + "</span></a>";
     } else {

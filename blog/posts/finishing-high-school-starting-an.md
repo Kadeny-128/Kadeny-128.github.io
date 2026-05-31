@@ -45,17 +45,17 @@ current progress.
 final product inspo.
 
 
-### Victory Velocity — GEO + ChatGPT Ads Agency
+### Victory Velocity: GEO + ChatGPT Ads Agency
 
 This is what I’m building right now.
 
-The spark came from a friend who built a service around GEO— Generative Engine Optimizaition. Shout out to Noah Barbaros!
+The spark came from a friend who built a service around GEO, Generative Engine Optimization. Shout out to Noah Barbaros!
 
-GEO is about helping business show up in AI searches and chats. He predicted the early pattern in GEO and provided optimization services to e-commerce based on his thesis. I wanted to understand how he studied the pattern, and through one of our chats he mentioned the hidden opportunities in a rising trend — ChatGPT Ads.
+GEO is about helping business show up in AI searches and chats. He predicted the early pattern in GEO and provided optimization services to e-commerce based on his thesis. I wanted to understand how he studied the pattern, and through one of our chats he mentioned the hidden opportunities in a rising trend: ChatGPT Ads.
 
 ChatGPT Ads opened access for any companies in May (just two weeks ago). The entry bar was reduced tremendously, including removing a $50k minimum spend threshold. But most businesses I talk to have never heard about any of this, let alone the ability to set up their brands on ChatGPT ads.
 
-So there was GEO, now a new layer—ChatGPT ads is released. Our agency, Victory Velocity, is positioned to do both for our clients. We are now servicing our first 2 free clients. Our goal is to develop real success case studies in the still early ChatGPT ads wave before the market gets crowded. The timing window is narrow, but my co-founder and I are pouring our hearts and souls into this agency. I believe that our agency will be positioned in the top 5% in the ChatGPT ads agency market. Although only time can prove, once metrics roll out in the next 2-3 weeks.
+So there was GEO, now a new layer: ChatGPT ads is released. Our agency, Victory Velocity, is positioned to do both for our clients. We are now servicing our first 2 free clients. Our goal is to develop real success case studies in the still early ChatGPT ads wave before the market gets crowded. The timing window is narrow, but my co-founder and I are pouring our hearts and souls into this agency. I believe that our agency will be positioned in the top 5% in the ChatGPT ads agency market. Although only time can prove, once metrics roll out in the next 2-3 weeks.
 
 Anyways, more to come about our agency.
 
@@ -79,7 +79,7 @@ Last month, I built a “write someone/ or yourself a letter” app. The app let
 [IMAGE: images/finishing-high-school-starting-an_img7.png]
 write someone/ yourself a letter.
 
-Oh one more thing — I set a goal to gain 15 pounds in two months, only to realize that bulking is more difficult than it seems, especially being one of the skinner kids throughout my life. I know exactly what the problem is — eating. It seems like no matter how much I stuff my mouth with food, it simply isn’t enough. My weight always goes up throughout the day and falls back to default the next morning.
+Oh one more thing: I set a goal to gain 15 pounds in two months, only to realize that bulking is more difficult than it seems, especially being one of the skinner kids throughout my life. I know exactly what the problem is: eating. It seems like no matter how much I stuff my mouth with food, it simply isn’t enough. My weight always goes up throughout the day and falls back to default the next morning.
 
 So I decided to eat even more and track calories in my food as much as possible. My new goal: 160lbs by the end of summer.
 

@@ -24,15 +24,15 @@ We often overlook beauty of our reality. What is beauty anyways? Our reality doe
 
 Just as nature drew me in that one quiet evening.
 
-“Anyone with a feeling for nature—a deeper sensitivity—will find it all gives pleasure. Even what seems inadvertent.”
+“Anyone with a feeling for nature, with a deeper sensitivity, will find it all gives pleasure. Even what seems inadvertent.”
 
-Realize that our reality is not evil, at its most, inadvertent yet beautiful. And being able to take pleasure in being part of our reality is one of the best ways to live. In Marcus’ own words—living in accordance with nature.
+Realize that our reality is not evil, at its most, inadvertent yet beautiful. And being able to take pleasure in being part of our reality is one of the best ways to live. In Marcus’ own words: living in accordance with nature.
 
 If I die by next morning, the wheel of time goes on, nature goes on.
 
 But while I am alive, the blessing of nature carries.
 
-Meditations—Book 3.
+Meditations, Book 3.
 
 Subscribed
 
