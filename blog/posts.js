@@ -37,18 +37,6 @@ window.BLOG_POSTS = [
     featured: true,
   },
   {
-    slug: "18",
-    title: "18.",
-    subtitle: "break-up talk.",
-    date: "2026-02-15",
-    dateLabel: "Feb 2026",
-    tags: ["Life", "Reflection"],
-    cover: "",
-    excerpt:
-      "My first breakup, withdrawal syndrome, the myth of closure, and the quiet battle of learning to be 'me' again.",
-    file: "18.md",
-  },
-  {
     slug: "things-seen-only-by-those-at-home",
     title: "Things seen only by those at home with Nature and its works.",
     subtitle:
