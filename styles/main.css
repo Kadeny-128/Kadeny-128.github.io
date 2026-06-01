@@ -389,6 +389,7 @@ strong {
   position: relative;
   padding-block: clamp(3.5rem, 7vw, 6rem) clamp(3rem, 6vw, 5rem);
   overflow: hidden;
+  font-family: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 .hero::before {
