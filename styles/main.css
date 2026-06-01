@@ -21,7 +21,7 @@
 
   /* Type */
   --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  --font-sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif;
 
   /* Layout */
@@ -389,7 +389,6 @@ strong {
   position: relative;
   padding-block: clamp(3.5rem, 7vw, 6rem) clamp(3rem, 6vw, 5rem);
   overflow: hidden;
-  font-family: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 .hero::before {
