@@ -78,7 +78,7 @@ window.BLOG_POSTS = [
     slug: "17-and-building-chapter-1",
     title: "17 & Building : Chapter 1",
     subtitle:
-      “Read my “private journal”. Every week: new projects, new thoughts, new perspectives.”,
+      'Read my “private journal”. Every week: new projects, new thoughts, new perspectives.',
     date: "2025-05-24",
     dateLabel: "May 2025",
     tags: ["Building", "Wildfire", "Authenticity"],
