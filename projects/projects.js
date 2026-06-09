@@ -91,6 +91,7 @@ window.PROJECTS = [
       "- **Output** a risk score per location, not just an after-the-fact alarm",
       "## Where it went",
       "I built a pitch, a 1-pager, and a landing page, and got to pitch the idea to a VC at Deloitte and someone who runs AI at Google. They didn't ban the idea, which I took as a win. My mentor had worked directly with BC Wildfire Services on a similar project, which gave me a community to build with.",
+      "[IMAGE: /images/fuelgo-showcase.jpg]\nShowcasing FuelGo at the Vancouver Emerging Technology Showcase.",
     ].join("\n\n"),
   },
   {
