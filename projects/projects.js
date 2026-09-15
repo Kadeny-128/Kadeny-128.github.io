@@ -118,4 +118,76 @@ window.PROJECTS = [
       "- **Teaching by doing**: turning a build into a guide others can follow",
     ].join("\n\n"),
   },
+  {
+    slug: "ikea-consulting",
+    title: "IKEA Customer Research",
+    tagline:
+      "My first student consulting project — visiting IKEA stores across Vancouver to interview customers and employees.",
+    status: "Student consulting",
+    tags: ["Consulting", "Retail", "Research"],
+    links: [
+      {
+        label: "View the deck",
+        url: "https://www.canva.com/design/DAGZTdEbFEc/Gv3sNbGraeC9zrmmjeyfBA/view?utm_content=DAGZTdEbFEc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3433d9a137",
+        icon: "bx-slideshow",
+      },
+    ],
+    body: [
+      "## Overview",
+      "My first student consulting project. I visited IKEA stores across Vancouver to interview customers and employees about their in-store experience.",
+      "## What I took away",
+      "This was my introduction to primary research: showing up in person, asking real people real questions, and turning that into a set of findings for a company.",
+    ].join("\n\n"),
+  },
+  {
+    slug: "samsung-consulting",
+    title: "Samsung Research & Consulting",
+    tagline:
+      "A student research and consulting project analyzing Samsung as a company.",
+    status: "Student consulting",
+    tags: ["Consulting", "Research"],
+    links: [
+      {
+        label: "View the deck",
+        url: "https://docs.google.com/presentation/d/e/2PACX-1vQPbh8JrKEua1-e2IOP4grXT84o-iJfncgvRH2oNEc82K66u5vd3FBiTHd9G8-RFdDGPKJ6x-_to6yX/pub?start=false&loop=false&delayms=3000",
+        icon: "bx-slideshow",
+      },
+    ],
+    body: [
+      "## Overview",
+      "A student research and consulting project for Samsung, digging into the company and putting together a recommendation deck.",
+      "## What I took away",
+      "Learned a ton about company analysis and how to build a \"heck-yeah\" deck: one clear enough that the reader is nodding along by the last slide.",
+    ].join("\n\n"),
+  },
+  {
+    slug: "shell-recommendation",
+    title: "Shell Research & Recommendation",
+    tagline:
+      "My proudest research project — a full recommendation deck built for Shell.",
+    status: "Research project",
+    tags: ["Research", "Consulting"],
+    links: [
+      { label: "Read the deck", url: "Shell.pdf", icon: "bx-file" },
+    ],
+    body: [
+      "## Overview",
+      "My proudest research project. I poured my heart and soul into the recommendation deck built for Shell.",
+    ].join("\n\n"),
+  },
+  {
+    slug: "tks-content",
+    title: "TKS: \"Content Guy\"",
+    tagline:
+      "Shot and edited footage end-to-end for TKS's social media.",
+    status: "Program",
+    tags: ["Video", "Content", "TKS"],
+    links: [
+      { label: "View program", url: "https://www.tks.world/", icon: "bx-link-external" },
+    ],
+    body: [
+      "## Overview",
+      "Shot and edited footage end-to-end for The Knowledge Society's (TKS) social media, growing from rough early clips to a few genuinely cinematic pieces.",
+    ].join("\n\n"),
+  },
 ];

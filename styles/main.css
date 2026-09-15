@@ -548,6 +548,12 @@ strong {
   gap: 1.5rem;
 }
 
+.section-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
@@ -626,64 +632,45 @@ strong {
 
 /* =================================================================
    Experience
+   A simple LinkedIn-style list, not cards — the roles that matter,
+   each linking out to its own /experience.html?slug= page for the
+   full story.
    ================================================================= */
-.experience-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-}
-
-.experience-card {
+.experience-list {
   display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
-  padding: clamp(1.5rem, 3vw, 2rem);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  flex-direction: column;
+  border-top: 1px solid var(--border);
+}
+
+.experience-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
   color: inherit;
-  position: relative;
-  overflow: hidden;
-  transition: transform var(--t) var(--ease),
-    box-shadow var(--t) var(--ease), border-color var(--t) var(--ease);
+  transition: padding-left var(--t) var(--ease), background var(--t) var(--ease);
 }
 
-.experience-card::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 100%;
-  background: var(--accent);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform var(--t) var(--ease);
+.experience-row:hover {
+  padding-left: 0.5rem;
+  background: var(--surface);
 }
 
-.experience-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--border-strong);
-}
-
-.experience-card:hover::after {
-  transform: scaleX(1);
-}
-
-.company-logo {
+.experience-logo {
   flex-shrink: 0;
-  width: 84px;
-  height: 84px;
+  width: 52px;
+  height: 52px;
   display: grid;
   place-items: center;
   background: #fff;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  padding: 0.85rem;
+  padding: 0.5rem;
+  overflow: hidden;
 }
 
-.company-logo img {
+.experience-logo img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
@@ -691,33 +678,54 @@ strong {
   object-fit: contain;
 }
 
-.experience-details {
+.experience-logo-text {
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.experience-row-main {
+  flex: 1;
   min-width: 0;
 }
 
-.experience-details h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.45rem;
-}
-
-.experience-details p {
-  color: var(--text-secondary);
-  font-size: 0.975rem;
-}
-
-.link-hint {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  margin-top: 0.9rem;
+.experience-row-title {
+  font-size: 1rem;
   font-weight: 600;
+}
+
+.experience-row-title .role {
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.experience-row-sub {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+.experience-row-period {
+  flex-shrink: 0;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.experience-row-arrow {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
   color: var(--accent);
   opacity: 0;
   transform: translateX(-4px);
   transition: opacity var(--t) var(--ease), transform var(--t) var(--ease);
 }
 
-.experience-card:hover .link-hint {
+.experience-row:hover .experience-row-arrow {
   opacity: 1;
   transform: translateX(0);
 }
@@ -872,25 +880,22 @@ strong {
 
 /* Stagger cards within a grid */
 .project-grid [data-reveal]:nth-child(2),
-.experience-grid [data-reveal]:nth-child(2),
+.experience-list [data-reveal]:nth-child(2),
 .contact-grid [data-reveal]:nth-child(2) {
   transition-delay: 0.08s;
 }
 .project-grid [data-reveal]:nth-child(3),
-.experience-grid [data-reveal]:nth-child(3),
+.experience-list [data-reveal]:nth-child(3),
 .contact-grid [data-reveal]:nth-child(3) {
   transition-delay: 0.16s;
 }
 .project-grid [data-reveal]:nth-child(4),
-.experience-grid [data-reveal]:nth-child(4),
+.experience-list [data-reveal]:nth-child(4),
 .contact-grid [data-reveal]:nth-child(4) {
   transition-delay: 0.24s;
 }
-.experience-grid [data-reveal]:nth-child(5) {
+.experience-list [data-reveal]:nth-child(5) {
   transition-delay: 0.32s;
-}
-.experience-grid [data-reveal]:nth-child(6) {
-  transition-delay: 0.4s;
 }
 
 /* =================================================================
@@ -915,17 +920,8 @@ strong {
     max-width: none;
   }
 
-  .project-grid,
-  .experience-grid {
+  .project-grid {
     grid-template-columns: 1fr;
-  }
-
-  /* Cards are full-width single-column here, so always show the
-     "View details →" CTA instead of waiting for a hover that may
-     never come on a narrow / touch layout. */
-  .link-hint {
-    opacity: 1;
-    transform: none;
   }
 }
 
@@ -997,9 +993,17 @@ strong {
     justify-content: flex-start;
   }
 
-  .experience-card {
-    flex-direction: column;
-    gap: 1.1rem;
+  .experience-row {
+    flex-wrap: wrap;
+  }
+
+  .experience-row-period {
+    order: 1;
+    margin-left: calc(52px + 1.25rem);
+  }
+
+  .experience-row-arrow {
+    display: none;
   }
 
   .cta-container .btn {
@@ -1024,24 +1028,21 @@ strong {
    real press state instead.
    ================================================================= */
 @media (hover: none) {
-  /* The "Visit website →" hints are opacity:0 until hover on desktop —
-     show them so touch users can see each card is a link. */
-  .link-hint {
-    opacity: 1;
-    transform: none;
-  }
-
   /* Don't leave a translateY / shadow "lifted" state stuck after a tap. */
   .btn:hover,
   .nav-cta:hover,
   .hero-social a:hover,
   .now-tag:hover,
   .project-card:hover,
-  .experience-card:hover,
   .contact-card:hover,
   .footer-social a:hover {
     transform: none;
     box-shadow: none;
+  }
+
+  .experience-row:hover {
+    padding-left: 0;
+    background: transparent;
   }
 }
 
@@ -1052,7 +1053,7 @@ strong {
 }
 
 .project-card:active,
-.experience-card:active,
+.experience-row:active,
 .contact-card:active,
 .now-tag:active,
 .hero-social a:active,
