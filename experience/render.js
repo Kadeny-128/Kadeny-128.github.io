@@ -66,14 +66,7 @@
       var bits = [];
       if (item.role) bits.push("<span>" + esc(item.role) + "</span>");
       if (item.period) bits.push("<span>" + esc(item.period) + "</span>");
-      var html = bits.join(' <span class="dot">·</span> ');
-      if (item.tags && item.tags.length) {
-        html +=
-          ' <span class="dot">·</span> ' +
-          item.tags
-            .map(function (t) { return '<span class="post-hero-tag">' + esc(t) + "</span>"; })
-            .join("");
-      }
+      var html = bits.join(' <span class="sep">·</span> ');
       metaEl.innerHTML = html;
     }
 
@@ -82,10 +75,8 @@
       linksEl.innerHTML = item.links
         .map(function (l) {
           return (
-            '<a class="project-page-link" href="' + esc(l.url) + '" ' +
-            'target="_blank" rel="noopener">' +
-            '<i class="bx ' + esc(l.icon || "bx-link-external") + '"></i> ' +
-            esc(l.label) + "</a>"
+            '<a href="' + esc(l.url) + '" ' +
+            'target="_blank" rel="noopener">' + esc(l.label) + "</a>"
           );
         })
         .join("");
@@ -94,7 +85,6 @@
     if (bodyEl) bodyEl.innerHTML = renderMarkdown(item.body || "");
 
     renderMore(item);
-    if (window.KadenReveal) window.KadenReveal();
   }
 
   // "More experience" strip at the bottom
@@ -103,15 +93,13 @@
     if (!wrap) return;
     var others = EXPERIENCE.filter(function (p) { return p !== current; });
     if (!others.length) { wrap.style.display = "none"; return; }
-    var html = '<h2 class="project-more-title">More experience</h2><div class="project-more-grid">';
+    var html = '<h2>more experience</h2><ul class="list">';
     others.forEach(function (p) {
       html +=
-        '<a class="project-more-card" href="/experience.html?slug=' + esc(p.slug) + '">' +
-        '<span class="project-more-name">' + esc(p.company) + "</span>" +
-        '<span class="project-more-tagline">' + esc(p.tagline || "") + "</span>" +
-        "</a>";
+        '<li><a href="/experience.html?slug=' + esc(p.slug) + '">' + esc(p.company) + "</a>" +
+        '<span class="note">' + esc(p.tagline || "") + "</span></li>";
     });
-    html += "</div>";
+    html += "</ul>";
     wrap.innerHTML = html;
   }
 

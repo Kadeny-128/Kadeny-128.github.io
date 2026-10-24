@@ -1,0 +1,279 @@
+/* Kaden Yeung — one column, two fonts, almost nothing else. */
+
+:root {
+  --bg: #fbfcfd;
+  --ink: #171c24;
+  --text: #363c44;
+  --muted: #69727f;
+  --border: #d7dce2;
+  --accent: #3a5a80;
+  --accent-strong: #294564;
+  --sans: "IBM Plex Sans", system-ui, sans-serif;
+  --display: "Outfit", system-ui, sans-serif;
+  --measure: 548px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  transition: text-decoration-color 0.15s, color 0.15s;
+}
+
+a:hover {
+  color: var(--accent-strong);
+  text-decoration-color: var(--accent-strong);
+}
+
+strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.9em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---------- page ---------- */
+
+.page {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 96px 24px 120px;
+}
+
+.meta {
+  font-family: var(--display);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.meta a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.meta a:hover,
+.meta a[aria-current="page"] {
+  color: var(--ink);
+}
+
+.sep {
+  opacity: 0.5;
+  margin: 0 2px;
+}
+
+h1,
+.title {
+  font-family: var(--display);
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  text-transform: lowercase;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+
+.subtitle {
+  margin-top: 6px;
+  font-family: var(--display);
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  color: var(--muted);
+}
+
+.section {
+  margin-top: 52px;
+}
+
+h2 {
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+
+h3 {
+  font-family: var(--display);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 26px;
+}
+
+p + p,
+.section p {
+  margin-top: 14px;
+}
+
+/* ---------- lists ---------- */
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li + li {
+  margin-top: 10px;
+}
+
+.list .note {
+  display: block;
+  color: var(--muted);
+  font-size: 14.4px;
+}
+
+.list .date {
+  color: var(--muted);
+  font-size: 14.4px;
+  margin-left: 6px;
+  white-space: nowrap;
+}
+
+.more {
+  margin-top: 14px;
+  font-size: 14.4px;
+}
+
+/* ---------- articles (posts, projects, experience) ---------- */
+
+.body {
+  margin-top: 40px;
+}
+
+.body > * + * {
+  margin-top: 14px;
+}
+
+.body h2 {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.body h3 {
+  margin-bottom: 0;
+}
+
+.body ul,
+.body ol {
+  padding-left: 1.5em;
+}
+
+.body li + li {
+  margin-top: 6px;
+}
+
+.body blockquote {
+  border-left: 2px solid var(--border);
+  padding-left: 16px;
+  color: var(--muted);
+}
+
+.body hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 32px 0;
+}
+
+.body figure {
+  margin: 28px 0;
+}
+
+.body figcaption,
+.post-figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.post-gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.cover {
+  margin-top: 28px;
+}
+
+.links {
+  margin-top: 14px;
+  font-size: 14.4px;
+}
+
+.links a + a {
+  margin-left: 14px;
+}
+
+.blog-empty {
+  color: var(--muted);
+}
+
+/* ---------- foot ---------- */
+
+.foot {
+  margin-top: 52px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-size: 14.4px;
+  color: var(--muted);
+}
+
+.foot a {
+  color: var(--muted);
+}
+
+.foot a:hover {
+  color: var(--ink);
+}
+
+@media (max-width: 560px) {
+  .page {
+    padding: 56px 20px 80px;
+  }
+
+  h1,
+  .title {
+    font-size: 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}
