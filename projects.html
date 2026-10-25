@@ -7,7 +7,7 @@
 
     <meta name="description" content="Every project Kaden Yeung has built or researched — flagship builds and student consulting work." />
     <meta name="author" content="Kaden Yeung" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#fbfcfd" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="All Projects | Kaden Yeung" />
@@ -17,291 +17,86 @@
 
     <link rel="icon" type="image/png" href="images/marcus.png" />
     <link rel="apple-touch-icon" href="images/marcus.png" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Poppins:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Outfit:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-    />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/blog.css" />
+    <link rel="stylesheet" href="./styles/site.css" />
   </head>
   <body>
-    <a href="#main" class="skip-link">Skip to content</a>
-
-    <header class="main-nav" id="top">
-      <nav class="nav-container" aria-label="Primary">
-        <a href="/" class="nav-brand" aria-label="Kaden Yeung home">
-          <img src="images/marcus.png" alt="" class="nav-logo" />
-          <span class="nav-name">Kaden Yeung</span>
-        </a>
-
-        <button
-          class="nav-toggle"
-          id="nav-toggle"
-          aria-label="Open menu"
-          aria-expanded="false"
-          aria-controls="nav-menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <div class="nav-links" id="nav-menu">
-          <a href="/about.html" class="nav-link">About</a>
-          <a href="/#projects" class="nav-link is-active">Projects</a>
-          <a href="/#experience" class="nav-link">Experience</a>
-          <a href="/blog.html" class="nav-link">Writing</a>
-          <a href="/#contact" class="nav-link">Contact</a>
-          <a
-            href="https://kadeny.substack.com/subscribe"
-            class="nav-cta"
-            target="_blank"
-            rel="noopener"
-            >Follow</a
-          >
-        </div>
+    <main class="page">
+      <nav class="meta" aria-label="Primary">
+        <a href="/">kaden yeung</a>
+        <span class="sep">·</span>
+        <a href="/about.html">about</a>
+        <span class="sep">·</span>
+        <a href="/projects.html" aria-current="page">projects</a>
+        <span class="sep">·</span>
+        <a href="/blog.html">writing</a>
       </nav>
-    </header>
 
-    <main id="main">
+      <header>
+        <h1 class="title">projects</h1>
+        <p class="subtitle">things i've built and researched.</p>
+      </header>
+
       <section class="section">
-        <div class="container">
-          <a href="/#projects" class="back-link">
-            <i class="bx bx-left-arrow-alt"></i> Back home
-          </a>
-
-          <header class="section-header" data-reveal>
-            <h1 class="post-hero-title">All Projects</h1>
-            <p class="section-intro">
-              Everything I've built and researched — flagship builds first,
-              student consulting work below.
-            </p>
-          </header>
-
-          <div class="project-grid">
-            <article class="project-card" data-reveal>
-              <div class="project-top">
-                <span class="project-index">01</span>
-                <ul class="tag-row">
-                  <li>AI</li>
-                  <li>Multi-agent</li>
-                  <li>Drug discovery</li>
-                </ul>
-              </div>
-              <h3 class="project-title">Cerebras Drug Discovery Engine</h3>
-              <p class="project-description">
-                Built a multi-agent AI swarm that accelerates pharmaceutical
-                lead identification. The system autonomously cross-references
-                biological targets against chemical constraints to verify drug
-                candidates in seconds.
-              </p>
-              <a href="/project.html?slug=cerebras-drug-discovery" class="project-link">
-                Read the full story <i class="bx bx-right-arrow-alt"></i>
-              </a>
-            </article>
-
-            <article class="project-card" data-reveal>
-              <div class="project-top">
-                <span class="project-index">02</span>
-                <ul class="tag-row">
-                  <li>Research</li>
-                  <li>Automation</li>
-                  <li>Desalination</li>
-                </ul>
-              </div>
-              <h3 class="project-title">
-                Autodose PAC to mitigate annual HABs
-              </h3>
-              <p class="project-description">
-                Designed a sensor-guided automation concept that optimizes PAC
-                dosing during harmful algal blooms, improving desalination
-                efficiency and reducing waste.
-              </p>
-              <a href="/project.html?slug=pac-dose-habs" class="project-link">
-                Read the full story <i class="bx bx-right-arrow-alt"></i>
-              </a>
-            </article>
-
-            <article class="project-card" data-reveal>
-              <div class="project-top">
-                <span class="project-index">03</span>
-                <ul class="tag-row">
-                  <li>IoT</li>
-                  <li>LoRaWAN</li>
-                  <li>Hardware</li>
-                </ul>
-              </div>
-              <h3 class="project-title">Wildfire Detection System</h3>
-              <p class="project-description">
-                Designed a real-time wildfire monitoring concept that tracks
-                fuel moisture, temperature, and wind using low-power sensors
-                connected through LoRaWAN and solar power.
-              </p>
-              <a href="/project.html?slug=wildfire-detection" class="project-link">
-                Read the full story <i class="bx bx-right-arrow-alt"></i>
-              </a>
-            </article>
-
-            <article class="project-card" data-reveal>
-              <div class="project-top">
-                <span class="project-index">04</span>
-                <ul class="tag-row">
-                  <li>Web3</li>
-                  <li>Ethereum</li>
-                  <li>Writing</li>
-                </ul>
-              </div>
-              <h3 class="project-title">ERC-20 Launch Guide</h3>
-              <p class="project-description">
-                I documented how to create and launch a token on Ethereum in
-                under 30 minutes, then wrote a guide to help others make their
-                own. It gave me insight into smart contracts, decentralization,
-                and how crypto tools are built from first principles.
-              </p>
-              <a href="/project.html?slug=erc20-launch-guide" class="project-link">
-                Read the full story <i class="bx bx-right-arrow-alt"></i>
-              </a>
-            </article>
-          </div>
-
-          <header class="section-header" data-reveal style="margin-top: 4rem">
-            <h2 class="section-heading">Student Consulting</h2>
-            <p class="section-intro">
-              Earlier consulting projects and programs from school.
-            </p>
-          </header>
-
-          <div class="project-grid">
-            <article class="project-card" data-reveal>
-              <div class="project-top">
-                <span class="project-index">05</span>
-                <ul class="tag-row">
-                  <li>Consulting</li>
-                  <li>Retail</li>
-                  <li>Research</li>
-                </ul>
-              </div>
-              <h3 class="project-title">IKEA Customer Research</h3>
-              <p class="project-description">
-                My first student consulting project. I visited IKEA stores
-                across Vancouver to interview customers and employees.
-              </p>
-              <a href="/project.html?slug=ikea-consulting" class="project-link">
-                Read the full story <i class="bx bx-right-arrow-alt"></i>
-              </a>
-            </article>
-
-            <article class="project-card" data-reveal>
-              <div class="project-top">
-                <span class="project-index">06</span>
-                <ul class="tag-row">
-                  <li>Consulting</li>
-                  <li>Research</li>
-                </ul>
-              </div>
-              <h3 class="project-title">Samsung Research &amp; Consulting</h3>
-              <p class="project-description">
-                A student research and consulting project for Samsung. Learned
-                a ton about company analysis and building a "heck-yeah" deck.
-              </p>
-              <a href="/project.html?slug=samsung-consulting" class="project-link">
-                Read the full story <i class="bx bx-right-arrow-alt"></i>
-              </a>
-            </article>
-
-            <article class="project-card" data-reveal>
-              <div class="project-top">
-                <span class="project-index">07</span>
-                <ul class="tag-row">
-                  <li>Research</li>
-                  <li>Consulting</li>
-                </ul>
-              </div>
-              <h3 class="project-title">Shell Research &amp; Recommendation</h3>
-              <p class="project-description">
-                My proudest research project. I poured my heart and soul into
-                the recommendation deck.
-              </p>
-              <a href="/project.html?slug=shell-recommendation" class="project-link">
-                Read the full story <i class="bx bx-right-arrow-alt"></i>
-              </a>
-            </article>
-
-            <article class="project-card" data-reveal>
-              <div class="project-top">
-                <span class="project-index">08</span>
-                <ul class="tag-row">
-                  <li>Video</li>
-                  <li>Content</li>
-                  <li>TKS</li>
-                </ul>
-              </div>
-              <h3 class="project-title">TKS: "Content Guy"</h3>
-              <p class="project-description">
-                Shot and edited footage end-to-end for TKS's social media,
-                growing from rough early clips to a few genuinely cinematic
-                pieces.
-              </p>
-              <a href="/project.html?slug=tks-content" class="project-link">
-                Read the full story <i class="bx bx-right-arrow-alt"></i>
-              </a>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <a href="/#top" class="footer-brand" aria-label="Back to top">
-          <img src="images/marcus.png" alt="" class="footer-logo" />
-          <span>
-            <span class="footer-name">Kaden Yeung</span>
-            <span class="footer-tag">Living &amp; learning.</span>
-          </span>
-        </a>
-
-        <ul class="footer-social" aria-label="Social links">
+        <h2>builds</h2>
+        <ul class="list">
           <li>
-            <a href="https://github.com/Kadeny-128" target="_blank" rel="noopener" aria-label="GitHub">
-              <i class="bx bxl-github"></i>
-            </a>
+            <a href="/project.html?slug=cerebras-drug-discovery">Cerebras drug discovery engine</a>
+            <span class="note">A multi-agent swarm for pharmaceutical lead identification.</span>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/kadeny" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <i class="bx bxl-linkedin"></i>
-            </a>
+            <a href="/project.html?slug=pac-dose-habs">Autodose PAC to mitigate HABs</a>
+            <span class="note">Sensor-guided coagulant dosing for desalination plants.</span>
           </li>
           <li>
-            <a href="https://medium.com/@kadenyeung" target="_blank" rel="noopener" aria-label="Medium">
-              <i class="bx bxl-medium"></i>
-            </a>
+            <a href="/project.html?slug=wildfire-detection">Wildfire detection system</a>
+            <span class="note">Low-power LoRaWAN sensors tracking fuel moisture, heat and wind.</span>
           </li>
           <li>
-            <a href="https://kadeny.substack.com/subscribe" target="_blank" rel="noopener" aria-label="Substack">
-              <i class="bx bxs-news"></i>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:128kaden@gmail.com" aria-label="Email">
-              <i class="bx bx-envelope"></i>
-            </a>
+            <a href="/project.html?slug=erc20-launch-guide">ERC-20 launch guide</a>
+            <span class="note">How to launch a token on Ethereum in under 30 minutes.</span>
           </li>
         </ul>
+      </section>
 
-        <p class="footer-copy">
-          © <span id="year">2026</span> Kaden Yeung · Built with life.
-        </p>
-      </div>
-    </footer>
+      <section class="section">
+        <h2>student consulting</h2>
+        <ul class="list">
+          <li>
+            <a href="/project.html?slug=ikea-consulting">IKEA customer research</a>
+            <span class="note">Interviewing customers and staff across Vancouver stores.</span>
+          </li>
+          <li>
+            <a href="/project.html?slug=samsung-consulting">Samsung research and consulting</a>
+            <span class="note">Company analysis and a &ldquo;heck-yeah&rdquo; deck.</span>
+          </li>
+          <li>
+            <a href="/project.html?slug=shell-recommendation">Shell research and recommendation</a>
+            <span class="note">My proudest research project.</span>
+          </li>
+          <li>
+            <a href="/project.html?slug=tks-content">TKS: &ldquo;content guy&rdquo;</a>
+            <span class="note">Shooting and editing footage for TKS's social media.</span>
+          </li>
+        </ul>
+      </section>
 
-    <script src="script.js" defer></script>
+      <footer class="foot">
+        <a href="https://github.com/Kadeny-128" target="_blank" rel="noopener">github</a>
+        <span class="sep">·</span>
+        <a href="https://www.linkedin.com/in/kadeny" target="_blank" rel="noopener">linkedin</a>
+        <span class="sep">·</span>
+        <a href="https://kadeny.substack.com/subscribe" target="_blank" rel="noopener">substack</a>
+        <span class="sep">·</span>
+        <a href="https://medium.com/@kadenyeung" target="_blank" rel="noopener">medium</a>
+        <span class="sep">·</span>
+        <a href="mailto:128kaden@gmail.com">email</a>
+      </footer>
+    </main>
   </body>
 </html>

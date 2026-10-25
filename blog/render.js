@@ -203,56 +203,18 @@
       return;
     }
 
-    var featured = POSTS.filter(function (p) { return p.featured; })[0] || POSTS[0];
-    var rest = POSTS.filter(function (p) { return p !== featured; });
+    var limit = parseInt(root.getAttribute("data-limit"), 10);
+    var posts = limit > 0 ? POSTS.slice(0, limit) : POSTS;
 
-    var html = "";
-
-    // Featured / latest
-    html +=
-      '<a class="feature-card" href="/post.html?slug=' + esc(featured.slug) + '" data-reveal>';
-    if (featured.cover) {
+    var html = '<ul class="list">';
+    posts.forEach(function (p) {
       html +=
-        '<div class="feature-media"><img src="/blog/images/' +
-        esc(featured.cover) +
-        '" alt="" loading="eager" decoding="async" /></div>';
-    } else {
-      html += '<div class="feature-media feature-media-text"><span aria-hidden="true">“</span></div>';
-    }
-    html += '<div class="feature-body">';
-    html += '<span class="post-kicker">Latest' + (featured.tags && featured.tags[0] ? " · " + esc(featured.tags[0]) : "") + "</span>";
-    html += '<h2 class="feature-title">' + esc(featured.title) + "</h2>";
-    if (featured.excerpt) html += '<p class="feature-excerpt">' + esc(featured.excerpt) + "</p>";
-    html += '<span class="post-meta">' + esc(featured.dateLabel || featured.date) + "</span>";
-    html += "</div></a>";
-
-    // Grid of the rest
-    html += '<div class="post-grid">';
-    rest.forEach(function (p) {
-      html += '<a class="post-card" href="/post.html?slug=' + esc(p.slug) + '" data-reveal>';
-      if (p.cover) {
-        html +=
-          '<div class="post-card-media"><img src="/blog/images/' +
-          esc(p.cover) +
-          '" alt="" loading="lazy" decoding="async" /></div>';
-      } else {
-        html += '<div class="post-card-media post-card-media-text"><span aria-hidden="true">“</span></div>';
-      }
-      html += '<div class="post-card-body">';
-      if (p.tags && p.tags.length) {
-        html += '<ul class="post-tags">';
-        p.tags.slice(0, 2).forEach(function (t) { html += "<li>" + esc(t) + "</li>"; });
-        html += "</ul>";
-      }
-      html += '<h3 class="post-card-title">' + esc(p.title) + "</h3>";
-      if (p.excerpt) html += '<p class="post-card-excerpt">' + esc(p.excerpt) + "</p>";
-      html += '<span class="post-meta">' + esc(p.dateLabel || p.date) + "</span>";
-      html += "</div></a>";
+        '<li><a href="/post.html?slug=' + esc(p.slug) + '">' + esc(p.title) + "</a>" +
+        '<span class="date">' + esc(p.dateLabel || p.date) + "</span></li>";
     });
-    html += "</div>";
+    html += "</ul>";
 
     root.innerHTML = html;
-    if (window.KadenReveal) window.KadenReveal();
   }
 
   /* ---------- single post ---------- */
@@ -289,16 +251,9 @@
     }
     var metaEl = document.getElementById("post-meta");
     if (metaEl) {
-      var tagHtml = "";
-      if (post.tags && post.tags.length) {
-        tagHtml =
-          ' <span class="dot">·</span> ' +
-          post.tags
-            .map(function (t) { return '<span class="post-hero-tag">' + esc(t) + "</span>"; })
-            .join("");
-      }
       metaEl.innerHTML =
-        "<span>" + esc(post.dateLabel || post.date) + "</span>" + tagHtml;
+        esc(post.dateLabel || post.date) +
+        ' <span class="sep">·</span> <span id="post-readtime"></span>';
     }
 
     var coverEl = document.getElementById("post-cover");
@@ -322,7 +277,6 @@
         var rtEl = document.getElementById("post-readtime");
         if (rtEl) rtEl.textContent = readingTime(raw) + " min read";
         renderPrevNext(post);
-        if (window.KadenReveal) window.KadenReveal();
       })
       .catch(function (err) {
         if (bodyEl) {
@@ -343,24 +297,14 @@
     var idx = POSTS.indexOf(post);
     var newer = idx > 0 ? POSTS[idx - 1] : null; // sorted newest-first
     var older = idx < POSTS.length - 1 ? POSTS[idx + 1] : null;
-    var html = "";
+    var links = [];
     if (older) {
-      html +=
-        '<a class="post-nav-link prev" href="/post.html?slug=' + esc(older.slug) + '">' +
-        '<span class="post-nav-dir"><i class="bx bx-left-arrow-alt"></i> Older</span>' +
-        '<span class="post-nav-title">' + esc(older.title) + "</span></a>";
-    } else {
-      html += "<span></span>";
+      links.push('Older: <a href="/post.html?slug=' + esc(older.slug) + '">' + esc(older.title) + "</a>");
     }
     if (newer) {
-      html +=
-        '<a class="post-nav-link next" href="/post.html?slug=' + esc(newer.slug) + '">' +
-        '<span class="post-nav-dir">Newer <i class="bx bx-right-arrow-alt"></i></span>' +
-        '<span class="post-nav-title">' + esc(newer.title) + "</span></a>";
-    } else {
-      html += "<span></span>";
+      links.push('Newer: <a href="/post.html?slug=' + esc(newer.slug) + '">' + esc(newer.title) + "</a>");
     }
-    wrap.innerHTML = html;
+    wrap.innerHTML = links.join("<br />");
   }
 
   function setMeta(name, content, isProp) {

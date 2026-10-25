@@ -17,20 +17,6 @@
    ================================================================= */
 window.EXPERIENCE = [
   {
-    slug: "zero",
-    company: "Zero",
-    role: "Product Intern",
-    period: "Jul 2026 – Present",
-    tagline: "Building on the product team.",
-    tags: ["Product"],
-    links: [],
-    body: [
-      "## Overview",
-      "I joined Zero as a Product intern in July 2026 and am currently still on the team.",
-      "More on what I'm building here soon.",
-    ].join("\n\n"),
-  },
-  {
     slug: "victory-velocity",
     company: "Victory Velocity",
     role: "Co-Founder",
@@ -45,6 +31,20 @@ window.EXPERIENCE = [
       "Victory Velocity is the GEO and ChatGPT-ads agency I'm co-founding, helping businesses show up in AI engines. Search is shifting from Google links to AI citations, and paid discovery is shifting from keyword bidding to conversational context — Victory Velocity helps brands adapt to both.",
       "## Why I started it",
       "I noticed the shift firsthand: more of my own research and buying decisions were routing through AI answers instead of search results. I wrote up the thesis in *The Biggest Shift in Marketing Since Google Ads* and started building the agency around it.",
+    ].join("\n\n"),
+  },
+  {
+    slug: "zero",
+    company: "Zero",
+    role: "Product Intern",
+    period: "Jul – Aug 2026",
+    tagline: "A summer on the product team.",
+    tags: ["Product"],
+    links: [],
+    body: [
+      "## Overview",
+      "I joined Zero as a Product intern in July 2026 and finished in August 2026.",
+      "More on what I worked on here soon.",
     ].join("\n\n"),
   },
   {

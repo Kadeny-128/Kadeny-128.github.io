@@ -66,14 +66,7 @@
       var bits = [];
       if (project.year) bits.push("<span>" + esc(project.year) + "</span>");
       if (project.status) bits.push("<span>" + esc(project.status) + "</span>");
-      var html = bits.join(' <span class="dot">·</span> ');
-      if (project.tags && project.tags.length) {
-        html +=
-          ' <span class="dot">·</span> ' +
-          project.tags
-            .map(function (t) { return '<span class="post-hero-tag">' + esc(t) + "</span>"; })
-            .join("");
-      }
+      var html = bits.join(' <span class="sep">·</span> ');
       metaEl.innerHTML = html;
     }
 
@@ -81,12 +74,9 @@
     if (linksEl && project.links && project.links.length) {
       linksEl.innerHTML = project.links
         .map(function (l) {
-          var primary = /github/i.test(l.url) ? "" : "";
           return (
-            '<a class="project-page-link" href="' + esc(l.url) + '" ' +
-            'target="_blank" rel="noopener">' +
-            '<i class="bx ' + esc(l.icon || "bx-link-external") + '"></i> ' +
-            esc(l.label) + "</a>"
+            '<a href="' + esc(l.url) + '" ' +
+            'target="_blank" rel="noopener">' + esc(l.label) + "</a>"
           );
         })
         .join("");
@@ -95,7 +85,6 @@
     if (bodyEl) bodyEl.innerHTML = renderMarkdown(project.body || "");
 
     renderMore(project);
-    if (window.KadenReveal) window.KadenReveal();
   }
 
   // "Other projects" strip at the bottom
@@ -104,15 +93,13 @@
     if (!wrap) return;
     var others = PROJECTS.filter(function (p) { return p !== current; });
     if (!others.length) { wrap.style.display = "none"; return; }
-    var html = '<h2 class="project-more-title">More projects</h2><div class="project-more-grid">';
+    var html = '<h2>more projects</h2><ul class="list">';
     others.forEach(function (p) {
       html +=
-        '<a class="project-more-card" href="/project.html?slug=' + esc(p.slug) + '">' +
-        '<span class="project-more-name">' + esc(p.title) + "</span>" +
-        '<span class="project-more-tagline">' + esc(p.tagline || "") + "</span>" +
-        "</a>";
+        '<li><a href="/project.html?slug=' + esc(p.slug) + '">' + esc(p.title) + "</a>" +
+        '<span class="note">' + esc(p.tagline || "") + "</span></li>";
     });
-    html += "</div>";
+    html += "</ul>";
     wrap.innerHTML = html;
   }
 
