@@ -21,7 +21,7 @@ window.EXPERIENCE = [
     company: "Victory Velocity",
     role: "Co-Founder",
     period: "2026 – Present",
-    tagline: "SEO and custom web solutions for businesses.",
+    tagline: "SEO and custom websites for businesses.",
     tags: ["SEO", "Web development", "Agency"],
     links: [
       { label: "victoryvelocity.ca", url: "https://www.victoryvelocity.ca/", icon: "bx-link-external" },
@@ -29,11 +29,9 @@ window.EXPERIENCE = [
     ],
     body: [
       "## Overview",
-      "Victory Velocity is the agency I run on the side. We do two things for businesses: SEO, so people can find you, and custom web solutions, so the site does what you need once they arrive.",
-      "## Custom builds",
-      "Most of my hours go into the custom side. That could be a booking flow for your customers, or an internal tool that replaces a process someone has been doing by hand for years. If it lives in a browser, I can probably build it.",
+      "Victory Velocity is the agency I run on the side. We do SEO and build custom websites and web tools for businesses.",
       "## Working together",
-      "If you have a project in mind, [book a 30 minute call](" + "https://cal.com/kaden-yeung-bgczdf/30min?overlayCalendar=true" + ") or email me at 128kaden@gmail.com.",
+      "If you need either, [book a 30 minute call](https://cal.com/kaden-yeung-bgczdf/30min?overlayCalendar=true) or email me at 128kaden@gmail.com. Tell me what you're working on and I'll tell you if I can help.",
     ].join("\n\n"),
   },
   {
