@@ -21,16 +21,17 @@ window.EXPERIENCE = [
     company: "Victory Velocity",
     role: "Co-Founder",
     period: "2026 – Present",
-    tagline: "Helping businesses get found and cited by AI search engines.",
-    tags: ["GEO", "SEO", "Agency"],
+    tagline: "SEO and custom websites for businesses.",
+    tags: ["SEO", "Web development", "Agency"],
     links: [
-      { label: "Read my writing on Medium", url: "https://kadenyeung.medium.com/", icon: "bxl-medium" },
+      { label: "victoryvelocity.ca", url: "https://www.victoryvelocity.ca/", icon: "bx-link-external" },
+      { label: "Book a call", url: "https://cal.com/kaden-yeung-bgczdf/30min?overlayCalendar=true", icon: "bx-calendar" },
     ],
     body: [
       "## Overview",
-      "Victory Velocity is the GEO and ChatGPT-ads agency I'm co-founding, helping businesses show up in AI engines. Search is shifting from Google links to AI citations, and paid discovery is shifting from keyword bidding to conversational context — Victory Velocity helps brands adapt to both.",
-      "## Why I started it",
-      "I noticed the shift firsthand: more of my own research and buying decisions were routing through AI answers instead of search results. I wrote up the thesis in *The Biggest Shift in Marketing Since Google Ads* and started building the agency around it.",
+      "Victory Velocity is the agency I run on the side. We do SEO and build custom websites and web tools for businesses.",
+      "## Working together",
+      "If you need either, [book a 30 minute call](https://cal.com/kaden-yeung-bgczdf/30min?overlayCalendar=true) or email me at 128kaden@gmail.com. Tell me what you're working on and I'll tell you if I can help.",
     ].join("\n\n"),
   },
   {
